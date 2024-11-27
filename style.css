@@ -1,0 +1,35 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  width: 100%;
+}
+
+
+.jumbotron {
+    background-color: white;
+}
+
+
+h2 {
+    color: yellow;
+    text-shadow: 1px 1.5px 2px black;
+}
+
+
+.picture {
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    .picture {
+      width: 44%;
+    }
+  }
+
+
+
