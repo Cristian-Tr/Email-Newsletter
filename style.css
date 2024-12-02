@@ -23,11 +23,11 @@ h2 {
 
 
 .crown {
-  width: 8%;
+  width: 17%;
 }
 
 @media (min-width: 768px) {
-  .picture-header {
+  .crown {
     width: 17%;
   }
 }
