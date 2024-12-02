@@ -21,15 +21,36 @@ h2 {
 }
 
 
-.picture {
+.picture-header {
     width: 90%;
 }
 
 @media (min-width: 768px) {
-    .picture {
-      width: 44%;
+    .picture-header {
+      width: 53%;
     }
   }
 
+  
+.pack {
+  width: 71%;
+}
+
+@media (min-width: 768px) {
+  .pack {
+    width: 53%;
+  }
+}
+
+
+.picture-footer {
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .picture-footer{
+    width: 35%;
+  }
+}
 
 
