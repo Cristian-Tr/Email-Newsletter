@@ -22,7 +22,7 @@ h2 {
 
 
 .picture-header {
-    width: 90%;
+    width: 71%;
 }
 
 @media (min-width: 768px) {
@@ -33,7 +33,7 @@ h2 {
 
   
 .pack {
-  width: 71%;
+  width: 62%;
 }
 
 @media (min-width: 768px) {
@@ -44,7 +44,7 @@ h2 {
 
 
 .picture-footer {
-  width: 90%;
+  width: 71%;
 }
 
 @media (min-width: 768px) {
