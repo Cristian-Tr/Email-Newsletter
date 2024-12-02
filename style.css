@@ -21,6 +21,17 @@ h2 {
 }
 
 
+
+.crown {
+  width: 8%;
+}
+
+@media (min-width: 768px) {
+  .picture-header {
+    width: 17%;
+  }
+}
+
 .picture-header {
     width: 84%;
 }
