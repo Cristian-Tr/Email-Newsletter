@@ -11,13 +11,13 @@ body {
 
 
 .jumbotron {
-    background-color: white;
+  background-color: white;
 }
 
 
 h2 {
-    color: yellow;
-    text-shadow: 1px 1.5px 2px black;
+  color: yellow;
+  text-shadow: 1px 1.5px 2px black;
 }
 
 .crown {
@@ -26,20 +26,20 @@ h2 {
 
 @media (min-width: 768px) {
   .crown {
-    width: 17%;
+    width: 8%;
   }
 }
 
 .picture-header {
-    width: 88%;
+  width: 88%;
 }
 
 @media (min-width: 768px) {
-    .picture-header {
-      width: 53%;
-    }
+  .picture-header {
+    width: 53%;
   }
-  
+}
+
 .pack {
   width: 62%;
 }
@@ -55,9 +55,7 @@ h2 {
 }
 
 @media (min-width: 768px) {
-  .picture-footer{
+  .picture-footer {
     width: 35%;
   }
 }
-
-
