@@ -30,14 +30,31 @@ h2 {
   }
 }
 
+/* My repositories screen shoots */
+.carousel-inner>.item>img {
+  margin: 0 auto;
+  width: 93%;
+}
+
+@media (min-width: 768px) {
+  .carousel-inner>.item>img {
+    width: 35%;
+  }
+}
+
 .picture-header {
   width: 88%;
 }
 
 @media (min-width: 768px) {
   .picture-header {
-    width: 53%;
+    width: 35%;
   }
+}
+
+a.left.carousel-control,
+a.right.carousel-control {
+  opacity: 0;
 }
 
 .pack {
