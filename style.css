@@ -16,7 +16,12 @@ body {
 
 
 h2 {
-  color: yellow;
+  color: magenta;
+  text-shadow: 1px 1.5px 2px black;
+}
+
+h3 {
+  color: magenta;
   text-shadow: 1px 1.5px 2px black;
 }
 
