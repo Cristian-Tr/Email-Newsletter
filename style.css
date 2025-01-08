@@ -4,11 +4,9 @@ body {
   padding: 0px;
 }
 
-
 body {
   width: 100%;
 }
-
 
 .jumbotron {
   background-color: white;
@@ -17,12 +15,12 @@ body {
 
 h2 {
   color: magenta;
-  text-shadow: 1px 1.5px 2px black;
+  text-shadow: 1px 1px 1px black;
 }
 
 h3 {
   color: magenta;
-  text-shadow: 1px 1.5px 2px black;
+  text-shadow: 1px 1px 1px black;
 }
 
 .crown {
