@@ -16,12 +16,22 @@ body {
 
 h2 {
   color: magenta;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: .5px .8px 1px black;
 }
 
 h3 {
   color: magenta;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: .5px .8px 1px black;
+}
+
+h4 {
+  color: springgreen;
+  text-shadow: .5px .8px 1px black;
+}
+
+h5 {
+  color: magenta;
+  text-shadow: .5px .8px 1px black;
 }
 
 .crown {
