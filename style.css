@@ -90,3 +90,43 @@ a.right.carousel-control {
     width: 35%;
   }
 }
+
+.logo-bar {
+  margin: 1px auto;
+}
+
+.face {
+  background: hsl(221, 44%, 40%);
+  color: white;
+  font-size: 18px;
+}
+
+.twit {
+  background: hsl(206, 82%, 60%);
+  color: white;
+  font-size: 18px;
+}
+
+.inst {
+  background: hsl(315, 71%, 50%);
+  color: white;
+  font-size: 18px;
+}
+
+.link {
+  background: blue;
+  color: white;
+  font-size: 18px;
+}
+
+.yout {
+  background: hsl(0, 100%, 50%);
+  color: white;
+  font-size: 18px;
+}
+
+.pint {
+  background: #c92228;
+  color: white;
+  font-size: 18px;
+}
