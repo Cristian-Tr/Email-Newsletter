@@ -239,26 +239,45 @@
         </div>
     </footer>
 
-    <script>
-        const counters = document.querySelectorAll('.counter');
-        const speed = 170;
+   <script>
+    const counters = document.querySelectorAll('.counter');
+    const speed = 170;
 
-        counters.forEach(counter => {
-            const updateCount = () => {
-                const target = +counter.getAttribute('data-target');
-                const count = +counter.innerText;
-                const inc = target / speed;
+    // 1. Definim funcția de numărare (logica ta originală)
+    const runCounter = (counter) => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const inc = target / speed;
 
-                if (count < target) {
-                    counter.innerText = Math.ceil(count + inc);
-                    setTimeout(updateCount, 1);
-                } else {
-                    counter.innerText = target;
-                }
-            };
-            updateCount();
+            if (count < target) {
+                counter.innerText = Math.ceil(count + inc);
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target;
+            }
+        };
+        updateCount();
+    };
+
+    // 2. Creăm "Observatorul" care pândește scroll-ul
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Dacă elementul e vizibil, pornim numărătoarea
+                runCounter(entry.target);
+                // Opрим observarea pentru acest element (să nu numere de fiecare dată când dăm scroll)
+                observer.unobserve(entry.target);
+            }
         });
-    </script>
+    }, { threshold: 0.5 }); // 0.5 înseamnă că începe când 50% din element e vizibil
+
+    // 3. Spunem observatorului ce elemente să urmărească
+    counters.forEach(counter => {
+        observer.observe(counter);
+    });
+</script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </body>
 
