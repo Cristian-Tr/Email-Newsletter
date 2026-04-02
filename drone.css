@@ -10,10 +10,10 @@
 
 /* TITLUL 2 - DRONE DELIVERY */
 .drone-title {
-    color: cyan;
-    text-shadow: 1.5px 1.5px 2px #003388;
+    color: red;
+    text-shadow: 1.7px 1.7px 2px black;
     font-size: clamp(18px, 5vw, 28px);
-    margin: 10px 0;
+    margin: 8px 0;
     font-weight: 800;
     text-align: center;
     width: 100%;
