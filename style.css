@@ -1,0 +1,434 @@
+/* ============================================================
+   1. RESET & GENERAL SETTINGS
+   ============================================================ */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(249, 244, 244, 0.77);
+    color: #333;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: red !important;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: black .8px .8px .8px;
+}
+
+h4 {
+    color: red !important;
+    font-weight: 800;
+    text-shadow: black .8px .8px .8px;
+}
+
+h5,
+p {
+    color: red;
+    font-weight: 500;
+    text-shadow: black .8px .8px .8px;
+}
+
+small {
+    color: red;
+    text-shadow: black .8px .8px .8px;
+}
+
+.header-cta {
+    width: 88%;
+    margin: 8px auto;
+    min-height: 500px;
+    background-image: url('./1.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+}
+
+.cta-overlay {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.cta-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-container h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(28px, 6vw, 50px);
+    margin-top: 125px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.cta-container-flex {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+/* ============================================================
+   2. SLIDES SHOW
+   ============================================================ */
+.slidesShow {
+    background-color: transparent;
+}
+
+.slides {
+    margin-top: 25px;
+    margin-bottom: 8px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 71%;
+    height: 152px;
+    background: url(./slide-0.png), url(./slide-1.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    box-shadow: 0.8px 0.8px 17px rgba(0, 0, 0, .5);
+    border-radius: 8px;
+    animation: ChangeOnlyBackground 17s ease-in-out infinite;
+    transition: .5s;
+}
+
+@media (min-width: 880px) {
+    .slides {
+        height: 530px;
+    }
+}
+
+@keyframes ChangeOnlyBackground {
+
+    0%,
+    100% {
+        background: url(./slide-0.png), url(./berries-farm.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    20% {
+        background: url(./slide-0.png), url(./berries-farm.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    25% {
+        background: url(./slide-0.png), url(./modern-factory.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    45% {
+        background: url(./slide-0.png), url(./modern-factory.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    50% {
+        background: url(./slide-0.png), url(./bottling-line.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    70% {
+        background: url(./slide-0.png), url(./bottling-line.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    75% {
+        background: url(./slide-0.png), url(./head-quarter.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    95% {
+        background: url(./slide-0.png), url(./head-quarter.png);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+/* ============================================================
+   3. SECTIUNI CONTENT (STORY & DELIVERY)
+   ============================================================ */
+.section-history,
+.section-tech-delivery {
+    padding: 60px 20px;
+    background-color: transparent;
+}
+
+.tech-reverse {
+    flex-direction: row-reverse !important;
+}
+
+.text-block {
+    flex: 1.2;
+}
+
+.image-block {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+}
+
+.image-block img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================
+   4. BERRIES DATA SECTION
+   ============================================================ */
+.section-stats {
+    background-color: transparent;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.stats-grid {
+    background: url(./warehouse.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    width: 95%;
+    height: 250px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 880px) {
+    .stats-grid {
+        height: 350px;
+    }
+}
+
+.stat-box {
+    margin-top: 90px;
+}
+
+.counter {
+    display: inline-block;
+    background-color: springgreen;
+    padding: 1px 12px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    text-align: center;
+}
+
+/* ============================================================
+   5. PRODUCTS SHOWCASE (REGLAJ DIMENSIUNI & HOT BADGE)
+   ============================================================ */
+.products-showcase {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+}
+
+.product-card {
+    position: relative;
+    background: url(./leaf.png);
+    padding: 40px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 12px 25px rgba(0, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+/* NEW PRODUCT */
+.hot-badge {
+    background: red;
+    color: white;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-weight: bold;
+    z-index: 5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* IMAGINEA PRODUSULUI  */
+.img-glow {
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: filter 0.3s ease;
+}
+
+.product-card:hover .img-glow {
+    animation: shakeOnly 0.5s infinite;
+    filter: brightness(1.25) drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+}
+
+@keyframes shakeOnly {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    20% {
+        transform: translate(-2px, 0px) rotate(1deg);
+    }
+
+    40% {
+        transform: translate(2px, 1px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-2px, -1px) rotate(0deg);
+    }
+
+    80% {
+        transform: translate(2px, -1px) rotate(1deg);
+    }
+
+    100% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+}
+
+.rating {
+    color: gold;
+}
+
+/* BUTOANELE BUY */
+.btn-buy {
+    background: transparent;
+    border: 2px solid red !important;
+    color: red !important;
+    padding: 10px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-buy:hover {
+    background: springgreen !important;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+/* ============================================================
+   6. RESPONSIVE
+   ============================================================ */
+@media (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img-glow {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .cta-container-flex,
+    .tech-reverse {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .image-block img {
+        max-width: 280px;
+    }
+
+    .img-glow {
+        max-width: 140px;
+    }
+
+    /* Revine la mărimea optimă pe mobil */
+    .hot-badge {
+        top: 15px;
+        right: 15px;
+    }
+
+    /* Revine la colț pe mobil */
+    .stats-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* ============================================================
+   7. FOOTER
+   ============================================================ */
+
+footer ul li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: springgreen;
+    text-shadow: black .8px .8px .8px;
+}
+
+footer ul li:hover {
+    color: red !important;
+}
+
+footer ul li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+a {
+    font-size: .8rem;
+    background-color: cyan;
+    border-radius: 17px;
+    color: red;
+    font-weight: 800;
+    padding-left: 17px;
+    padding-right: 17px;
+    text-decoration: none;
+}

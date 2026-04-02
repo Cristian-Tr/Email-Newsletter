@@ -1,285 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 
 <head>
     <meta charset="UTF-8">
-    <title>Nobilio Delicate</title>
-    <meta name="Email-Newsletter" content="Landing page & Newsletter" />
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakies Berries</title>
+    <meta name="description" content="Shakies Berries - Sucuri naturale livrate prin dronă.">
+    <link rel="icon" href="./0.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900|Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Segoe UI" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="drone.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Cristian Tr", 
+      "url": "https://cristian-tr.github.io/Email-Newsletter/",
+      "sameAs": ["https://github.com/Cristian-Tr/"]
+    }
+</script>
+
 </head>
 
 <body>
 
-    <div class="jumbotron text-center">
 
-        <!-- Header -->
-        <header>
+    <header class="header-cta">
+        <div class="cta-overlay">
+            <div class="cta-container">
+                <h1>SHAKIES BERRIES</h1>
+                <h2 class="drone-title">DRONE DELIVERY</h2>
 
-            <div class="col-sm-12 col-12" class="container-fluid align-items-center">
-                <img src="./coroana.png" class="crown" alt="sigla Nobilio" style="margin-top: -14px; width: 71px;">
-                <h2 style="margin-top: 1px;">
-                    NOBILIO DELICATE
-                </h2>
-                <h4 style="margin-top: -10px; color: magenta;">
-                    vinuri fara alcool
-                </h4>
-                <h5 style="margin-top: -5px;">
-                </h5><br>
+                <button class="btn-our-products"
+                    onclick="alert('Acesta este un site demo! Nu se pot trimite comenzi!')">
+                    OUR PRODUCTS
+                </button>
 
-                <!-- CAROUSEL -->
-                <div class="row" class="container-fluid align-items-center">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="drone-unit">
+                    <svg viewBox="0 0 400 450" class="drone-svg-container">
+                        <path d="M80,120 L320,120 L335,150 L65,150 Z M140,100 L260,100 L280,120 L120,120 Z"
+                            fill="red" />
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="./hotel.png" alt="promotion Nobilio">
-                                <div class="carousel-caption">
-                                </div>
-                            </div>
+                        <rect class="propeller-svg" x="40" y="105" width="90" height="17" rx="5" fill="springgreen" />
+                        <rect class="propeller-svg" x="270" y="105" width="90" height="17" rx="5" fill="springgreen" />
 
-                            <div class="item">
-                                <img src="./promotion.png" alt="hotel Nobilio">
-                                <div class="carousel-caption">
-                                </div>
-                            </div>
+                        <g fill="gray">
+                            <path d="M185,150 L180,180 L170,185 L170,195 L185,190 Z" />
+                            <path d="M215,150 L220,180 L230,185 L230,195 L215,190 Z" />
+                        </g>
 
-                            <div class="item">
-                                <img src="./reception.png" alt="hotel Nobilio">
-                                <div class="carousel-caption">
-                                </div>
-                            </div>
+                        <g class="bottle-cargo">
+                            <rect x="190" y="145" width="20" height="12" rx="3" fill="springgreen" />
+                            <path
+                                d="M190,157 L210,157 L210,180 C210,200 225,210 225,230 L225,275 L175,275 L175,230 C175,210 190,200 190,180 Z"
+                                fill="red" />
+                            <rect x="180" y="230" width="40" height="35" fill="springgreen" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
 
-                            <div class="item">
-                                <img src="./factory.png" alt="reception Nobilio">
-                                <div class=" carousel-caption">
-                                </div>
-                            </div>
 
-                            <!-- Left and right controls -->
-                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+    <!-- SECTIUNE PREZENTARE -->
+    <section class="text-center text-white"
+        style="background-color: transparent !important; margin-top: 53px; margin-bottom: 71px;"><br>
+        <div class="container">
 
-                            <!-- Left and right controls -->
-                            <a href="#myCarousel" data-slide="prev" class="btn btn-outline-secondary btn-sm"
-                                style="color: red; font-size: large;">&#10094;</a>
-                            <a href="#myCarousel" data-slide="next" class="btn btn-outline-secondary btn-sm"
-                                style="color: red; font-size: large;">&#10095;</a>
-
-                        </div>
-                    </div>
-
-                    <!-- IMAGE PROMOTION 
-                        <img src="./promotion.png" class="picture-header" alt="promo saptamanala"><br><br>
-                        -->
-                    <a href="https://cristian-tr.github.io/Cristian-T-Portfolio/" target="_blank"
-                        style="background: magenta; padding: 12px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 35px; font-weight: bold; width: 250px; margin: auto; margin-bottom: 53px;">
-                        Viziteaza magazinul nostru</a>
-
-                           <a href="https://cristian-tr.github.io/Cristian-T-Portfolio/"
-                style="font-size: 1.4rem; background-color: cyan; border-radius: 17px; color: red; font-weight: 800; padding: 1px 8px 1px 8px; text-decoration: none;">
+            <a href="https://cristian-tr.github.io/Cristian-T-Portfolio/"
+                style="font-size: 1rem; background-color: cyan; border-radius: 17px; color: red; font-weight: 800; padding-left: 17px; padding-right: 17px; text-decoration: none;">
                 CRISTIAN T <img src="my-picture.jpg" alt="Robot" style="width: clamp(35px, 8vw, 53px); height: clamp(35px, 8vw, 53px); 
                                border-radius: 50%; margin-bottom: 8px; object-fit: cover; border: 2px solid cyan;">
                 PORTFOLIO</a><br>
-            <h4 style="color: magenta; padding: 8px;" >Email Newsletter este un website demo din portofoliul Cristian T.</h4><br><br>
-                </div>
+            <p style="color: cyan;">This is a Demo Landing Page with similar design to an Email-Newsletter.</p>
+        </div>
+    </section>
 
-        </header>
+    <section>
+        <div class="slidesShow">
+            <div class='slides'>
+            </div>
+        </div>
+    </section>
 
 
-        <section>
+    <section class="section-history">
+        <div class="cta-container-flex">
+            <div class="text-block">
+                <h2>OUR STORY</h2>
+                <p>It all started on a small mountain farm, where transporting fresh berries was a challenge, but now
+                    we decided to combine nature with state-of-the-art technology.
+                    <br>That's why today, our company brings the fruits to our modern factory and then to your door,
+                    keeping the freshness intact.<br>
+                    We will continue to improve all activities so that Shakies Berries remains your favorite juice
+                    in the future!
+                </p>
+            </div>
+            <div class="image-block">
+                <img src="./old-factory.png" alt="Old factory">
+            </div>
+        </div>
+    </section>
 
+    <section class="section-tech-delivery">
+        <div class="cta-container-flex tech-reverse">
 
-
-            <div class="col-sm-12" class="container-fluid align-items-center">
-
-                <h3>
-                    PACHETE SPECIALE
-                    <br><br>
-                </h3>
-
-                <div class="col-sm-6 col-xs-12">
-                    <img src="pack-1.png" class="pack" alt="pachet special" border="0">
-                    <h5>
-                        NOBILIO SWEET<br> ★★★★★ 4.9 <br><br> vin fara alcool<br>
-                        
-                    </h5><br><br><br>
-
-                </div>
-
-                <div class="col-sm-6 col-xs-12">
-                    <img src="pack-2.png" class="pack" alt="pachet special" border="0">
-                    <h5>
-                        NOBILIO FIZZY<br>  ★★★★☆ 4.1 <br><br> vin fara alcool<br>
-                       
-                    </h5><br><br><br>
-
-                </div>
-
+            <div class="text-block">
+                <h2>DRONE DELIVERY</h2>
+                <p>Our fleet of advanced drones ensures lightning-fast delivery of fresh, natural juices straight to
+                    your doorstep. <br>
+                    Experience ultimate convenience as we bring the vibrant taste of our premium berries
+                    straight to your doorstep in minutes. <br>
+                    All you have to do is wait, and we will bring the freshest essence of nature directly to you,
+                    wherever you are.</p>
             </div>
 
-
-            <div class="col-sm-12" class="container-fluid align-items-center">
-                <h3>
-                    SELECTIE VINURI
-                </h3><br>
-
-                <div class="col-sm-4 col-xs-12">
-                    <img src="vin-rosu.png" width="71%" alt="pachet special" border="0">
-                    <h5>
-                        NOBILIO MILD<br>Cabernet<br> ★★★★☆ 4.1
-                    </h5>
-                    <h5>vin fara alcool</h5><br><br><br>
-
-                </div>
-
-                <div class="col-sm-4 col-xs-12">
-
-                    <img src="vin-alb.png" width="71%" alt="pachet special" border="0">
-                    <h5>
-                        NOBILIO SOFT<br>Chardonnay<br> ★★★★☆ 3.9
-                    </h5>
-                    <h5>vin fara alcool</h5><br><br><br>
-
-                </div>
-
-                <div class="col-sm-4 col-xs-12">
-
-                    <img src="vin-spumant.png" width="71%" alt="pachet special" border="0">
-                    <h5>
-                        NOBILIO BUBBLY<br>Merlot<br> ★★★★★ 4.9
-                    </h5>
-                    <h5>vin fara alcool</h5><br><br><br>
-
-                </div>
-
+            <div class="image-block">
+                <img src="./drone-delivery.png" alt="Drone delivery">
             </div>
 
+        </div>
+    </section>
 
-            <div class="col-sm-12" class="container-fluid align-items-center">
-                <h3>
-                    VINURI DE COLECTIE
-                    <br><br>
-                </h3>
-
-                <img src="./oferta.png" class="picture-footer" alt="promotion" border="0"><br><br>
-                <a href="https://cristian-tr.github.io/Cristian-T-Portfolio/" target="_blank"
-                    style="background: magenta; padding: 12px;color: #ffffff; font-family: sans-serif; font-size: 12px; line-height: 12px; text-align: center; text-decoration: none; display: block; border-radius: 35px; font-weight: bold; margin: auto; width: 250px;">
-                    Vezi produsele</a>
-            </div>
-
-        </section>
-
-
-        <footer>
-
-            <div class="col-sm-12" style="margin-top: 35px; margin-bottom: 35px;"
-                class="container-fluid align-items-center">
-                <h3>
-                    RECOMANDARI
-                </h3>
-
-                <div class="col-sm-6 col-xs-12">
-                    <h4 style="color: magenta;">
-                        Salata din fructe cu vin Nobilio!
-                    </h4><br>
-                    <img src="./salata.png" width="53%" alt="salata de fructe"><br>
-                    <h5 style="color: springgreen;">Ingrediente: portocale, zmeura, capsuni, kiwi, afine, struguri,
-                        banane, compot de ananas.<br>
-                        Se amesteca ingredientele apoi se stropesc cu putin vin fara alcool Nobilio.
-                    </h5>
-                </div>
-
-                <div class="col-sm-6 col-xs-12">
-                    <h4 style="color: magenta;">
-                        Viziteaza Crama Nobilio!
-                    </h4><br>
-                    <img src="./crama.png" width="53%" alt="salata de fructe"><br>
-                    <h5 style="color: springgreen;">Descriere: Crama Nobilio este construita din piatra poroasa
-                        ventilata
-                        natural.<br>
-                        Aceasta crama
-                        adaposteste delicioasele noastre vinuri fara alcool.
-                    </h5>
-                </div>
-
-            </div>
-
-            <div class="col-sm-12" style="margin-top: 35px; margin-bottom: 35px;"
-                class="container-fluid align-items-center">
-
-                <img src="./podgorie.png" class="picture-footer" alt="salata de fructe"><br>
-            </div>
-            <h5 style="color: springgreen;">
-                Vino la noi ca sa admiri natura creata de Dumnezeu <br>
-                si sa participi la o degustare de vinuri fara alcool, <br>
-                produse din struguri alesi cu grija din podgoriile noastre!
-            </h5><br>
-            <div class="col-sm-12" class="container-fluid align-items-center"><br>
-                <img src="coroana.png" class="crown" alt="alt_text" style="width: 53px;"><br>
-
-                <h5 style="margin-top: 3px;">
-                    NOBILIO DELICATE<br><br><br>
-
-                    <div class="col-sm-12 text-center">
-                        <div class="logo-bar">
-                            <a href="#" class="face"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="inst"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="yout"><i class="fa fa-youtube"></i></a>
-                            <a href="#" class="link"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" class="twit"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="pint"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                    </div><br><br><br>
-
-                    <h4 style="color: fuchsia;">
-                        LANDING PAGE & NEWSLETTER<br>
-                        using the same design
-                    </h4><br>
-
-                    <div class="row mt-4">
-                        <img src="my-picture.jpg" alt="Robot" style="width: clamp(30px, 8vw, 50px); height: clamp(30px, 8vw, 50px); 
-                               border-radius: 50%; margin: 0 10px; object-fit: cover; border: 2px solid cyan;"><br>
-                        <a href="https://cristian-tr.github.io/Cristian-T-Portfolio/"
-                            style="font-size: 1rem; background-color: cyan; border-radius: 17px; color: red; font-weight: 800; padding-left: 17px; padding-right: 17px; text-decoration: none;">
-                            CRISTIAN T - PORTFOLIO</a><br>
-                        <small>&copy; 2026 Landing Page & Email Newsletter project</small><br>
-                            Marcile si produsele prezentate sunt fictive!<br>
-                        </small>
+    <section class="section-stats">
+        <h2>SHAKIES BERRIES DATA</h2><br>
+        <div class="stats-grid">
+            <div class="row row-g-3 row-cols-md-3 g-4 text-center">
+                <div class="col">
+                    <div class="stat-box">
+                        <h3 class="counter" data-target="12500">0</h3>
+                        <h4>ORDERS</h4>
                     </div>
+                </div>
+                <div class="col">
+                    <div class="stat-box">
+                        <h3 class="counter" data-target="15300">0</h3>
+                        <h4>PRODUCTS</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="stat-box">
+                        <h3 class="counter" data-target="10700">0</h3>
+                        <h4>CUSTOMERS</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="products-showcase">
+        <h2>PRODUCTS</h2>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="./2.png" class="img-glow" alt="Cranberry Shakies">
+                <h3>Shakies Berries</h3>
+                <h5>CRANBERRY</h5>
+                <div class="rating">★★★★★ 4.9</div>
+                <button class="btn-buy" onclick="alert('Acesta este un site demo! Nu se pot trimite comenzi!')">
+                    BUY NOW</button>
             </div>
 
-            <a href="./dashboard.xlsx" download>
-                Download media data.xlsx
+            <div class="product-card">
+                <img src="./3.png" class="img-glow" alt="Strawberry Shakies">
+                <h3>Shakies Berries</h3>
+                <h5>STRAWBERRY</h5>
+                <div class="rating">★★★★★ 4.8</div>
+                <button class="btn-buy" onclick="alert('Acesta este un site demo! Nu se pot trimite comenzi!')">
+                    BUY NOW</button>
+            </div>
 
-            </a><br><br>
-            <h5>
-                🥂 <br> Consumati responsabil alcool!
-            </h5>
+            <div class="product-card">
+                <img src="./4.png" class="img-glow" alt="Raspberry Shakies">
+                <h3>Shakies Berries</h3>
+                <h5>RASPBERRY</h5>
+                <div class="rating">★★★★★ 5.0</div>
+                <button class="btn-buy" onclick="alert('Acesta este un site demo! Nu se pot trimite comenzi!')">
+                    BUY NOW</button>
+            </div>
 
+            <div class="product-card">
+                <span class="hot-badge">NEW</span>
+                <img src="./5.png" class="img-glow" alt="All Berries Shakies">
+                <h3>Shakies Berries</h3>
+                <h5>MIX BERRIES</h5>
+                <div class="rating">★★★★☆ 4.7</div>
+                <button class="btn-buy" onclick="alert('Acesta este un site demo! Nu se pot trimite comenzi!')">
+                    BUY NOW</button>
+            </div>
+        </div>
+    </main>
 
-    </div>
+    <footer class="text-white" style="background-color: transparent !important; margin-top: 53px;">
+        <div class="container text-center">
+            <div class="row row-g-3 row-cols-md-3 g-4 text-center">
+                <div class="col">
+                    <h4 class="h6 fw-bold mb-3"
+                        style="border-bottom: 2px solid cyan; display: inline-block; padding-bottom: 5px;">
+                        RESOURCES</h4>
+                    <ul class="list-unstyled">
+                        <li>Recipes</li>
+                        <li>Tutoriale</li>
+                        <li>Manuale</li>
+                        <li>Noutăți</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="h6 fw-bold mb-3"
+                        style="border-bottom: 2px solid cyan; display: inline-block; padding-bottom: 5px;">
+                        COMPANY</h4>
+                    <ul class="list-unstyled">
+                        <li>Istoric</li>
+                        <li>Mision</li>
+                        <li>Team</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="h6 fw-bold mb-3"
+                        style="border-bottom: 2px solid cyan; display: inline-block; padding-bottom: 5px;">
+                        SUPPORT</h4>
+                    <ul class="list-unstyled">
+                        <li>Orders</li>
+                        <li>Payement</li>
+                        <li>Delivery</li>
+                        <li>Return</li>
+                    </ul>
+                </div>
+            </div>
 
+            <!-- INFO PORTOFOLIU-->
+            <div>
+                <img src="my-picture.jpg" alt="My picture" style="width: clamp(30px, 8vw, 50px); height: clamp(30px, 8vw, 50px); 
+                               border-radius: 50%; margin-top:17px; object-fit: cover; border: 2px solid cyan;"><br>
+                <a href="https://cristian-tr.github.io/Cristian-T-Portfolio/">
+                    CRISTIAN T - PORTFOLIO</a><br>
+                <small>&copy; 2026 SHAKIES BERRIES PROJECT</small><br>
+                <small>Built with HTML, CSS & JavaScript technologies</small><br>
+                <small>Serviciile si produsele expuse sunt fictive!<br>
+                </small><br>
+            </div>
+        </div>
     </footer>
 
-    </div>
+    <script>
+        const counters = document.querySelectorAll('.counter');
+        const speed = 170;
 
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const inc = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </body>
 
 </html>

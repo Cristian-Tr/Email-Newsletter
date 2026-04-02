@@ -1,0 +1,113 @@
+/* CONTAINERUL GENERAL AL DRONEI */
+#drone-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centrare orizontală perfectă */
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* TITLUL 2 - DRONE DELIVERY */
+.drone-title {
+    color: cyan;
+    text-shadow: 1.5px 1.5px 2px #003388;
+    font-size: clamp(18px, 5vw, 28px);
+    margin: 10px 0;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+}
+
+/* BUTONUL OUR PRODUCTS */
+.btn-our-products {
+    background: red;
+    color: white;
+    border: 2px solid white;
+    padding: 8px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin: 8px auto;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-our-products:hover {
+    background: springgreen;
+    color: red;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* UNITATEA DRONEI (SVG) */
+.drone-unit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    margin-top: 8px;
+    perspective: 1000px;
+}
+
+.drone-svg-container {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.7));
+    animation: floating-drone 3s infinite alternate ease-in-out;
+    transition: transform 0.5s ease;
+}
+
+/* AJUSTARE PENTRU MOBIL */
+@media (max-width: 767px) {
+    .drone-svg-container {
+        max-width: 280px; 
+    }
+    .drone-title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+/* ANIMAȚIILE TALE ORIGINALE  */
+
+/* Plutirea dronei */
+@keyframes floating-drone {
+    from { transform: translateY(0); }
+    to { transform: translateY(-35px); }
+}
+
+/* Rotirea elicelor */
+.propeller-svg {
+    animation: spin-prop 0.1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes spin-prop {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+/* Balansarea sticlei (Cargo) */
+.bottle-cargo {
+    animation: bottle-sway 2.5s infinite alternate ease-in-out;
+    transform-origin: 200px 150px;
+}
+
+@keyframes bottle-sway {
+    from { transform: rotate(-6deg); }
+    to { transform: rotate(6deg); }
+}
+
+/* Efect de viteză la hover */
+.drone-svg-container:hover {
+    transform: scale(1.05);
+}
+
+.drone-svg-container:hover .propeller-svg {
+    animation-duration: 0.05s; /* Elicele se învârt și mai repede */
+}
