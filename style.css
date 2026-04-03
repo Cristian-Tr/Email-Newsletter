@@ -284,18 +284,14 @@ small {
 
 .quiz-btn {
     padding: 1px 1px;
-    border: 1px solid springgreen;
-    background: gold;
-    color: red;
+    border: 5px solid dodgerblue;
+    background: red;
+    color: springgreen;
     text-shadow: 1px 1px 1.7px black;
     cursor: pointer;
     font-weight: bold;
     font-size: 1rem;
     transition: all 0.2s ease-in-out;
-}
-
-.quiz-btn:hover {
-    border-color: #3d0a0a;
 }
 
 .quiz-btn.active {
@@ -330,91 +326,6 @@ small {
     opacity: 1;
 }
 
-
-/* ============================================================
-   7. FOOTER
-   ============================================================ */
-
-/* Containerul principal al sondajului */
-.quiz-wrapper {
-    max-width: 350px;
-    margin: 1px auto;
-    padding: 12px;
-    border-radius: 8px;
-    background: url(./survey-bg.png);
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-@media (min-width: 880px) {
-    .quiz-wrapper {
-        max-width: 400px;
-    }
-}
-
-.quiz-title {
-    color: gold;
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 1rem;
-    text-transform: uppercase;
-}
-
-/* Grila pentru butoane: 2 pe rând */
-.options-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-}
-
-.quiz-btn {
-    padding: 1px 1px;
-    border: 1px solid springgreen;
-    background: gold;
-    color: red;
-    text-shadow: 1px 1px 1.7px black;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: all 0.2s ease-in-out;
-}
-
-.quiz-btn:hover {
-    border-color: #3d0a0a;
-}
-
-.quiz-btn.active {
-    background: springgreen;
-    color: red;
-    border-color: springgreen;
-}
-
-/* Zona de răspuns cu înălțime fixă (Zero Layout Shift) */
-.result-area {
-    margin-top: 14px;
-    padding: 1px;
-    min-height: 45px;
-    /* Spațiu rezervat */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.result-text {
-    color: red;
-    background-color: gold;
-    font-weight: bold;
-    text-shadow: 1px 1px 1.7px black;
-    padding: 1px 10px;
-    font-size: 1.2rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.result-text.show {
-    opacity: 1;
-}
 
 /* ============================================================
    5. PRODUCTS SHOWCASE (REGLAJ DIMENSIUNI & NEW BADGE)
