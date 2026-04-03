@@ -1,10 +1,10 @@
-
 /* CONTAINERUL GENERAL AL DRONEI */
 #drone-section {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;    /* Centrare orizontală perfectă */
+    align-items: center;
+    /* Centrare orizontală */
     justify-content: center;
     margin: 0 auto;
 }
@@ -48,25 +48,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 98%;
+    width: 71%;
     margin-top: 8px;
     perspective: 1000px;
 }
 
 .drone-svg-container {
-    width: 100%;
-    max-width: 400px; 
+    width: 80%;
+    max-width: 400px;
     height: auto;
-    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.7));
-    animation: floating-drone 3s infinite alternate ease-in-out;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.7));
+    animation: floating-drone 5.3s infinite alternate ease-in-out;
     transition: transform 0.5s ease;
 }
 
 /* AJUSTARE PENTRU MOBIL */
 @media (max-width: 767px) {
     .drone-svg-container {
-        max-width: 280px; 
+        max-width: 280px;
     }
+
     .drone-title {
         font-size: 20px;
         margin-bottom: 5px;
@@ -77,8 +78,13 @@
 
 /* Plutirea dronei */
 @keyframes floating-drone {
-    from { transform: translateY(0); }
-    to { transform: translateY(-35px); }
+    from {
+        transform: translateY(17px);
+    }
+
+    to {
+        transform: translateY(-38px);
+    }
 }
 
 /* Rotirea elicelor */
@@ -89,8 +95,13 @@
 }
 
 @keyframes spin-prop {
-    from { transform: rotateY(0deg); }
-    to { transform: rotateY(360deg); }
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
 /* Balansarea sticlei (Cargo) */
@@ -100,8 +111,13 @@
 }
 
 @keyframes bottle-sway {
-    from { transform: rotate(-6deg); }
-    to { transform: rotate(6deg); }
+    from {
+        transform: rotate(-6deg);
+    }
+
+    to {
+        transform: rotate(6deg);
+    }
 }
 
 /* Efect de viteză la hover */
@@ -110,5 +126,6 @@
 }
 
 .drone-svg-container:hover .propeller-svg {
-    animation-duration: 0.05s; /* Elicele se învârt și mai repede */
+    animation-duration: 0.05s;
+    /* Elicele se învârt și mai repede */
 }

@@ -28,7 +28,7 @@ h3 {
 }
 
 h4 {
-    color: red !important;
+    color: red;
     font-weight: 800;
     text-shadow: black .8px .8px .8px;
 }
@@ -124,7 +124,7 @@ small {
 
 @media (min-width: 880px) {
     .slides {
-          width: 71%;
+        width: 71%;
         height: 530px;
     }
 }
@@ -173,9 +173,14 @@ small {
 /* ============================================================
    3. SECTIUNI CONTENT (STORY & DELIVERY)
    ============================================================ */
-.section-history,
+.section-history {
+    padding: 53px 8px;
+    background-color: transparent;
+    text-align: left;
+}
+
 .section-tech-delivery {
-    padding: 60px 20px;
+    padding: 0 8px 35px 8px;
     background-color: transparent;
     text-align: left;
 }
@@ -239,7 +244,6 @@ small {
     padding: 1px 8px;
     border-radius: 50px;
     font-family: sans-serif;
-    cursor: pointer;
     transition: 0.3s;
     border: none;
     text-align: center;
@@ -498,7 +502,7 @@ small {
 
 @media (min-width: 880px) {
     .quiz-wrapper {
-          max-width: 400px;
+        max-width: 400px;
     }
 }
 
