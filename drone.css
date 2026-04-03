@@ -24,7 +24,6 @@
 .btn-our-products {
     background: red;
     color: white;
-    border: 2px solid white;
     padding: 8px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
@@ -35,12 +34,18 @@
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+        inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+        inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
 }
 
 .btn-our-products:hover {
     background: springgreen;
     color: red;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+        inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+        inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
 }
 
 /* UNITATEA DRONEI (SVG) */
