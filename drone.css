@@ -54,24 +54,12 @@
 }
 
 .drone-svg-container {
-    width: 80%;
+    width: 88%;
     max-width: 400px;
     height: auto;
     filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.7));
     animation: floating-drone 5.3s infinite alternate ease-in-out;
     transition: transform 0.5s ease;
-}
-
-/* AJUSTARE PENTRU MOBIL */
-@media (max-width: 767px) {
-    .drone-svg-container {
-        max-width: 280px;
-    }
-
-    .drone-title {
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
 }
 
 /* ANIMAȚIILE TALE ORIGINALE  */
