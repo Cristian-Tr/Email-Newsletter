@@ -30,7 +30,7 @@
         <div class="cta-overlay">
             <div class="cta-container">
                 <h1>SHAKIES BERRIES</h1>
-                <h2 style="color: springgreen; font-size: clamp(12px, 6vw, 44px); margin-top: 8px;">NATURAL JUICE</h2>
+                <h2>NATURAL JUICE</h2>
                 <h3 class="drone-title">DRONE DELIVERY</h3>
 
                 <button class="btn-our-products"
@@ -46,7 +46,7 @@
                         <rect class="propeller-svg" x="40" y="105" width="90" height="17" rx="5" fill="springgreen" />
                         <rect class="propeller-svg" x="270" y="105" width="90" height="17" rx="5" fill="springgreen" />
 
-                        <g fill="gray">
+                        <g fill="springgreen">
                             <path d="M185,150 L180,180 L170,185 L170,195 L185,190 Z" />
                             <path d="M215,150 L220,180 L230,185 L230,195 L215,190 Z" />
                         </g>
@@ -56,7 +56,12 @@
                             <path
                                 d="M190,157 L210,157 L210,180 C210,200 225,210 225,230 L225,275 L175,275 L175,230 C175,210 190,200 190,180 Z"
                                 fill="red" />
-                            <rect x="180" y="230" width="40" height="35" fill="springgreen" />
+                            <rect id="label" x="180" y="230" width="40" height="35" fill="springgreen" />
+                            <text x="200" y="243" text-anchor="middle" font-family="Arial, sans-serif"
+                                font-weight="bold" font-size="8" fill="red">
+                                <tspan x="200" dy="0">Shakies</tspan>
+                                <tspan x="200" dy="10">Berries</tspan>
+                            </text>
                         </g>
                     </svg>
                 </div>
@@ -71,11 +76,13 @@
         <div class="container">
 
             <a href="https://cristian-tr.github.io/Cristian-T-Portfolio/"
-                style="font-size: 1rem; background-color: cyan; border-radius: 17px; color: red; font-weight: 800; padding-left: 17px; padding-right: 17px; text-decoration: none;">
+                style="font-size: 1rem; background-color: cyan; border-radius: 17px; color: gold; font-weight: 800; padding-left: 17px; padding-right: 17px; text-decoration: none;">
                 CRISTIAN T <img src="my-picture.jpg" alt="Robot" style="width: clamp(35px, 8vw, 53px); height: clamp(35px, 8vw, 53px); 
                                border-radius: 50%; margin-bottom: 8px; object-fit: cover; border: 2px solid cyan;">
                 PORTFOLIO</a><br>
-            <p style="color: cyan;">This is a Demo Landing Page with similar design to an Email-Newsletter!</p>
+            <p>DEMO DIGITAL MARKETING <br>
+                LANDING PAGE • EMAIL NEWSLETTER <br>
+                </p>
         </div>
     </section>
 
@@ -126,27 +133,46 @@
     </section>
 
     <section class="section-stats">
-        <h2>SHAKIES BERRIES DATA</h2><br>
+        <h2>SHAKIES BERRIES RESULTS</h2><br>
         <div class="stats-grid">
             <div class="row row-cols-2 justify-content-center text-center g-4">
                 <div class="col-6 col-md-3">
                     <div class="stat-box">
-                        <h3 class="counter" data-target="12500">0</h3>
+                        <h3 class="counter" data-target="125000">0</h3>
                         <h4>ORDERS</h4>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="stat-box">
-                        <h3 class="counter" data-target="10700">0</h3>
+                        <h3 class="counter" data-target="107000">0</h3>
                         <h4>CLIENTS</h4>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
+        <section class="col-12" style="margin-top: 71px;">
+            <h2>FIND THE RIGHT PRODUCT</h2>
+            <div class="quiz-wrapper">
+                <h3 class="quiz-title">Find out which juice would suit you based on your taste!</h3>
+
+                <div class="options-grid" id="quizOptions">
+                    <button class="quiz-btn" onclick="selectJuice(this, 'Raspberry')">Velvety Aroma</button>
+                    <button class="quiz-btn" onclick="selectJuice(this, 'Strawberry')">Intense Perfume</button>
+                    <button class="quiz-btn" onclick="selectJuice(this, 'Cranberry')">Sour Taste</button>
+                    <button class="quiz-btn" onclick="selectJuice(this, 'All Berries')">Energizing Mix</button>
+                </div>
+
+                <div class="result-area">
+                    <span id="juiceResult" class="result-text"></span>
+                </div>
+            </div>
+        </section>
+
+
+    </section>
     <main class="products-showcase">
-        <h2>PRODUCTS</h2>
+        <h2>OUR PRODUCTS</h2>
 
         <div class="products-grid">
             <div class="product-card">
@@ -177,7 +203,7 @@
             </div>
 
             <div class="product-card">
-                <span class="hot-badge">NEW</span>
+                <span class="new-badge">NEW</span>
                 <img src="./5.png" class="img-glow" alt="All Berries Shakies">
                 <h3>Shakies Berries</h3>
                 <h5>MIX BERRIES</h5>
@@ -188,96 +214,81 @@
         </div>
     </main>
 
-    <footer class="text-white" style="background-color: transparent !important; margin-top: 53px;">
-        <div class="container text-center">
-            <div class="row row-g-3 row-cols-md-3 g-4 text-center">
-                <div class="col">
-                    <h4 class="h6 fw-bold mb-3"
-                        style="border-bottom: 2px solid cyan; display: inline-block; padding-bottom: 5px;">
-                        RESOURCES</h4>
-                    <ul class="list-unstyled">
-                        <li>Recipes</li>
-                        <li>Tutoriale</li>
-                        <li>Manuale</li>
-                        <li>Noutăți</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4 class="h6 fw-bold mb-3"
-                        style="border-bottom: 2px solid cyan; display: inline-block; padding-bottom: 5px;">
-                        COMPANY</h4>
-                    <ul class="list-unstyled">
-                        <li>Istoric</li>
-                        <li>Mision</li>
-                        <li>Team</li>
-                        <li>Careers</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4 class="h6 fw-bold mb-3"
-                        style="border-bottom: 2px solid cyan; display: inline-block; padding-bottom: 5px;">
-                        SUPPORT</h4>
-                    <ul class="list-unstyled">
-                        <li>Orders</li>
-                        <li>Payement</li>
-                        <li>Delivery</li>
-                        <li>Return</li>
-                    </ul>
-                </div>
-            </div>
+    <footer class="row text-center" style="background-color: transparent !important; margin-top: 53px;">
 
-            <!-- INFO PORTOFOLIU-->
-            <div>
-                <img src="my-picture.jpg" alt="My picture" style="width: clamp(30px, 8vw, 50px); height: clamp(30px, 8vw, 50px); 
+        <!-- INFO PORTOFOLIU-->
+        <div class="col-12 text-center">
+            <img src="my-picture.jpg" alt="My picture" style="width: clamp(30px, 8vw, 50px); height: clamp(30px, 8vw, 50px); 
                                border-radius: 50%; margin-top:17px; object-fit: cover; border: 2px solid cyan;"><br>
-                <a href="https://cristian-tr.github.io/Cristian-T-Portfolio/">
-                    CRISTIAN T - PORTFOLIO</a><br>
-                <small>&copy; 2026 SHAKIES BERRIES PROJECT</small><br>
-                <small>Built with HTML, CSS & JavaScript technologies</small><br>
-                <small>Serviciile si produsele expuse sunt fictive!<br>
-                </small><br>
-            </div>
+            <a href="https://cristian-tr.github.io/Cristian-T-Portfolio/" style="color: gold; background-color: cyan;">
+                CRISTIAN T - PORTFOLIO</a><br>
+            <small>&copy; 2026 SHAKIES BERRIES PROJECT</small><br>
+            <small>Built with HTML, CSS & JavaScript technologies</small><br>
+            <small>Serviciile si produsele expuse sunt fictive!<br>
+            </small><br>
+        </div>
         </div>
     </footer>
 
-   <script>
-    const counters = document.querySelectorAll('.counter');
-    const speed = 170;
+    <script>
+        function selectJuice(element, flavor) {
+            const resultSpan = document.getElementById('juiceResult');
+            const buttons = document.querySelectorAll('.quiz-btn');
 
-    // 1. Definim funcția de numărare (logica ta originală)
-    const runCounter = (counter) => {
-        const updateCount = () => {
-            const target = +counter.getAttribute('data-target');
-            const count = +counter.innerText;
-            const inc = target / speed;
+            // Resetăm starea butoanelor
+            buttons.forEach(btn => btn.classList.remove('active'));
 
-            if (count < target) {
-                counter.innerText = Math.ceil(count + inc);
-                setTimeout(updateCount, 1);
-            } else {
-                counter.innerText = target;
-            }
+            // Activăm butonul apăsat
+            element.classList.add('active');
+
+            // Efect de tranziție pentru text
+            resultSpan.classList.remove('show');
+
+            setTimeout(() => {
+                resultSpan.innerText = "Shakies Berries - " + flavor;
+                resultSpan.classList.add('show');
+            }, 170);
+        }
+    </script>
+
+    <script>
+        const counters = document.querySelectorAll('.counter');
+        const speed = 80;
+
+        // 1. Definim funcția de numărare (logica ta originală)
+        const runCounter = (counter) => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const inc = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
         };
-        updateCount();
-    };
 
-    // 2. Creăm "Observatorul" care pândește scroll-ul
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Dacă elementul e vizibil, pornim numărătoarea
-                runCounter(entry.target);
-                // Opрим observarea pentru acest element (să nu numere de fiecare dată când dăm scroll)
-                observer.unobserve(entry.target);
-            }
+        // 2. Creăm "Observatorul" care pândește scroll-ul
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Dacă elementul e vizibil, pornim numărătoarea
+                    runCounter(entry.target);
+                    // Opрим observarea pentru acest element (să nu numere de fiecare dată când dăm scroll)
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 }); // 0.5 înseamnă că începe când 50% din element e vizibil
+
+        // 3. Spunem observatorului ce elemente să urmărească
+        counters.forEach(counter => {
+            observer.observe(counter);
         });
-    }, { threshold: 0.5 }); // 0.5 înseamnă că începe când 50% din element e vizibil
-
-    // 3. Spunem observatorului ce elemente să urmărească
-    counters.forEach(counter => {
-        observer.observe(counter);
-    });
-</script>
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </body>
