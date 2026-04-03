@@ -1,455 +1,582 @@
-/* GENERAL SETTINGS */
-html,
-body {
-	margin: 0px;
-	padding: 0px;
-	scroll-behavior: smooth;
-	font-family: 'Segoe UI', 'Lato', 'Pacifico', 'Montserrat';
+/* ============================================================
+   1. RESET & GENERAL SETTINGS
+   ============================================================ */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-	width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(249, 244, 244, 0.77);
+    color: #333;
+    line-height: 1.7;
 }
 
-.container-fluid {
-	padding-left: 8px;
-}
-
-/* --- EFECT FADE IN LA INTRAREA PE SITE --- */
-@keyframes fadeInEfect {
-	from {
-		opacity: 0;
-		transform: translateY(10px);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-header,
-main {
-	animation: fadeInEfect 1s ease-out;
-}
-
-/* BOOTSTRAP JUMBOTRON */
-.jumbotron {
-	background-color: white;
-	color: white;
-	margin-top: -27px;
-	padding: 1px;
-	font-family: Montserrat, sans-serif;
-}
-
-@keyframes rotation {
-	from {
-		transform: rotateY(0deg);
-	}
-
-	to {
-		transform: rotateY(360deg);
-	}
-}
-
-/* MY PICTURE SETTINGS */
-.portrait-picture {
-	margin: 8px auto;
-	margin-top: 53px;
-	background-color: rgb(230, 221, 221);
-	background-image: url(./my-photo.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	width: 187px;
-	height: 187px;
-	border-radius: 50%;
-	border: solid 1px lightskyblue;
-}
-
-.portrait-picture img {
-	width: 100%;
-}
-
-/* MY NAME */
-.jumbotron h1 {
-	text-align: center;
-	margin-top: 1px;
-	font-weight: 900;
-	font-family: "Lato", "Montserrat", "Times New Roman";
-	color: cyan;
-	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
-		0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 255, 0.1), 0 0 5px rgba(0, 0, 255, 0.1),
-		0 1px 3px rgba(0, 0, 255, 0.3), 0 3px 5px rgba(0, 0, 255, 0.2),
-		0 5px 10px rgba(0, 0, 255, 0.25), 0 10px 10px rgba(0, 0, 255, 0.2);
-}
-
-/* MY ACTIVITIES - SCRAMBLE TEXT*/
-h2 {
-	text-align: center;
-	font-weight: 300;
-	font-family: "Arial Narrow", 'Segoe UI', "Lato", "Montserrat", "sans serif";
-	color: cyan;
-	text-shadow: .8px .8px 1px black;
-}
-
-.scrambleContainer {
-	margin-top: 18px;
-	height: 100%;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-}
-
-.scrambleText {
-	padding-top: 1px;
-	width: 100%;
-	height: 35px;
-	margin: auto;
-}
-
-/* PORTFOLIO  */
+h1,
+h2,
 h3 {
-	font-weight: 400;
-	font-family: "Arial Narrow", 'Segoe UI', "Lato", "Montserrat", "sans serif";
-	color: cyan;
-	text-shadow: .8px .8px 1px black;
-	margin-top: 8px;
-	text-align: center;
+    color: red;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: black .8px .8px .8px;
 }
 
 h4 {
-	color: cyan;
-	font-weight: 100;
-	margin-top: 1px;
-	font-family: "Arial Narrow", 'Segoe UI', "Lato", "Montserrat", "sans serif";
+    color: red;
+    font-weight: 800;
+    text-shadow: black .8px .8px .8px;
 }
 
-h5 {
-	font-weight: 100;
-	margin-top: 3px;
-	font-family: "Arial Narrow", 'Segoe UI', "Lato", "Montserrat", "sans serif";
+h5,
+p {
+    color: red;
+    font-weight: 100;
+    text-shadow: black .8px .8px .8px;
 }
 
-@media (min-width: 768px) {
-	.col-sm-2 {
-		width: 20%;
-	}
-}
-/* ROCKETS */
-/* MY PORTFOLIO  */
-.thumbnail {
-	border-radius: 53% 53% 17% 17% / 53% 53% 44% 44%;
-	width: 100%;
-	max-width: 287px;
-	transform-style: preserve-3d;
-	padding: 1px;
-	background-color: white;
-	text-align: center;
-	margin: auto;
-	margin-top: 1px;
-	border: 3.5px solid black;
-	z-index: 8;
-	/*box-shadow: 7px 7px 14px #cccccc, -7px -7px 14px white;
-  transition: box-shadow 0.5s;*/
-	animation: float 12s ease-in-out infinite;
+small {
+    color: red;
+    text-shadow: black .8px .8px .8px;
 }
 
-@media (min-width: 1700px) {
-	.thumbnail {
-		width: 81%;
-	}
+.header-cta {
+    width: 88%;
+    margin: 8px auto;
+    min-height: 500px;
+    background-image: url('./1.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
 }
 
-@media (min-width: 2500px) {
-	.thumbnail {
-		width: 88%;
-	}
+.cta-overlay {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
 }
 
-@keyframes float {
-	0% {
-		transform: translatey(1px);
-	}
-
-	25% {
-		transform: translatey(-5px);
-	}
-
-	50% {
-		transform: translatey(8px);
-	}
-
-	75% {
-		transform: translatey(-5px);
-	}
-
-	100% {
-		transform: translatey(1px);
-	}
+.cta-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.thumbnail:hover {
-	box-shadow: inset 7px 7px 14px #cccccc, inset -7px -7px 14px white;
+.cta-container h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(28px, 6vw, 50px);
+    margin-top: 125px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
-/* GREEN ESCAPADE APP */
-.thumbnail .window1 {
-	display: block;
-	margin-top: 17px;
-	margin-bottom: 35px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 98px;
-	height: 98px;
-	border-radius: 50%;
-	border: 3.5px solid black;
-	background-image: url(./green-escapade-symbol.png);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
+.cta-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: springgreen;
+    font-size: clamp(12px, 6vw, 44px);
+    margin-top: 8px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
-/* NOBILIO DELICATE APP */
-.thumbnail .window2 {
-	display: block;
-	margin-top: 17px;
-	margin-bottom: 35px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 98px;
-	height: 98px;
-	border-radius: 50%;
-	border: 3.5px solid black;
-	background-image: url(./chatbot-consultant-symbol.png);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
+.cta-container-flex {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
 }
 
-/* AUTHISM ROBO THERAPY APP */
-.thumbnail .window3 {
-	display: block;
-	margin-top: 17px;
-	margin-bottom: 35px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 98px;
-	height: 98px;
-	border-radius: 50%;
-	border: 3.5px solid black;
-	background-image: url(./shakies-berries-symbol.png);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
+/* ============================================================
+   2. SLIDES SHOW
+   ============================================================ */
+.slidesShow {
+    background-color: transparent;
 }
 
-video {
-	display: block;
-	margin-top: 21px;
-	margin-bottom: 3px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 71%;
-	background: transparent;
-	border: .8px solid black;
+.slides {
+    margin-top: 17px;
+    margin-bottom: 8px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 82%;
+    height: 152px;
+    background: url(./slide-0.png), url(./slide-1.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    box-shadow: 0.8px 0.8px 17px rgba(0, 0, 0, .5);
+    border-radius: 8px;
+    animation: ChangeOnlyBackground 17s ease-in-out infinite;
+    transition: .5s;
 }
 
-.thumbnail::before,
-.thumbnail:after {
-	content: "";
-	position: absolute;
-	left: 49.8%;
-	transform: translateX(-50%);
+@media (min-width: 880px) {
+    .slides {
+        width: 57%;
+        height: 530px;
+    }
 }
 
-.thumbnail:after {
-	height: 188px;
-	width: 100%;
-	border: 3.5px solid black;
-	bottom: -2px;
-	z-index: -10;
-	transform: translateX(-50%) translateZ(-1px);
-	border-radius: 53% 53% 17% 17% / 80% 80% 17% 17%;
-	box-shadow: 7px 7px 14px #cccccc, -7px -7px 14px white;
-}
+@keyframes ChangeOnlyBackground {
 
-/* THUMBNAIL AS A LINK - CLICKABLE SURFACE */
-.span-link {
-	display: flex;
-	flex-wrap: wrap;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: 9999;
-}
+    0%,
+    100% {
+        background: url(./slide-0.png), url(./berries-farm.png);
+        background-size: cover;
+        background-position: center;
+    }
 
-.item h5 {
-	font-size: 12px;
-	text-align: center;
-	font-style: italic;
-}
+    30% {
+        background: url(./slide-0.png), url(./berries-farm.png);
+        background-size: cover;
+        background-position: center;
+    }
 
-@media (min-width: 768px) {
-	.item h5 {
-		font-size: 23px;
-	}
-}
+    35% {
+        background: url(./slide-0.png), url(./modern-factory.png);
+        background-size: cover;
+        background-position: center;
+    }
 
-.item img {
-	width: 70%;
-	margin: auto;
-}
+    70% {
+        background: url(./slide-0.png), url(./modern-factory.png);
+        background-size: cover;
+        background-position: center;
+    }
 
-@media (min-width: 768px) {
-	.item img {
-		width: 59%;
-	}
-}
+    75% {
+        background: url(./slide-0.png), url(./bottling-line.png);
+        background-size: cover;
+        background-position: center;
+    }
 
-.item span {
-	font-style: normal;
-}
-
-.col-sm-3 {
-	padding: 9px;
-}
-
-@media (min-width: 769px) {
-	#portfolio .col-sm-3 {
-		width: 20%;
-	}
-}
-
-strong {
-	font-size: 20.5px;
-	color: white;
-	text-shadow: 1.8px 1.8px 1.8px blue;
-}
-
-#light-1 {
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	margin: auto;
-	margin-bottom: 8px;
-	border: 1.7px solid black;
-	animation: blinking-light1 2.7s ease-in-out infinite;
+    95% {
+        background: url(./slide-0.png), url(./bottling-line.png);
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 
-@keyframes blinking-light1 {
-	0% {
-		background: transparent;
-	}
+/* ============================================================
+   3. SECTIUNI CONTENT (STORY & DELIVERY)
+   ============================================================ */
+.section-history {
+    padding: 53px 8px;
+    background-color: transparent;
+    text-align: left;
+}
 
-	0.3% {
-		background: springgreen;
-	}
+.section-tech-delivery {
+    padding: 0 8px 35px 8px;
+    background-color: transparent;
+    text-align: left;
+}
 
-	35% {
-		background: springgreen;
-	}
+.tech-reverse {
+    flex-direction: row-reverse !important;
+}
 
-	35.3% {
-		background: transparent;
-	}
+.text-block {
+    flex: 1.2;
+}
 
-	100% {
-		background: transparent;
-	}
+.image-block {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+}
+
+.image-block img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================
+   4. BERRIES DATA SECTION
+   ============================================================ */
+.section-stats {
+    background-color: transparent;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.stats-grid {
+    background: url(./berries-impact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    width: 90%;
+    height: 270px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 880px) {
+    .stats-grid {
+        height: 305px;
+    }
+}
+
+.stat-box {
+    margin-top: 90px;
+}
+
+.counter {
+    display: inline-block;
+    background-color: springgreen;
+    padding: 1px 8px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    transition: 0.3s;
+    border: none;
+    text-align: center;
 }
 
 
-#light-2 {
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	margin: auto;
-	margin-bottom: 8px;
-	border: 1.7px solid black;
-	animation: blinking-light2 2.7s ease-in-out infinite;
+/* ============================================================
+   7. QUIZ 
+   ============================================================ */
+
+
+.quiz-wrapper {
+    max-width: 350px;
+    margin: 1px auto;
+    padding: 12px;
+    border: 2px solid springgreen;
+    border-radius: 8px;
+    background: url(./survey-bg.png);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.quiz-title {
+    color: gold;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Grila pentru butoane: 2 pe rând */
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.quiz-btn {
+    padding: 1px 1px;
+    border: 1px solid springgreen;
+    background: gold;
+    color: red;
+    text-shadow: 1px 1px 1.7px black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.quiz-btn:hover {
+    border-color: #3d0a0a;
+}
+
+.quiz-btn.active {
+    background: springgreen;
+    color: red;
+    border-color: springgreen;
+}
+
+/* Zona de răspuns cu înălțime fixă (Zero Layout Shift) */
+.result-area {
+    margin-top: 14px;
+    padding: 1px;
+    min-height: 45px;
+    /* Spațiu rezervat */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-text {
+    color: red;
+    background-color: gold;
+    font-weight: bold;
+    text-shadow: 1px 1px 1.7px black;
+    padding: 1px 10px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.result-text.show {
+    opacity: 1;
 }
 
 
-@keyframes blinking-light2 {
-	0% {
-		background: transparent;
-	}
+/* ============================================================
+   7. FOOTER
+   ============================================================ */
 
-	35% {
-		background: transparent;
-	}
-
-	35.3% {
-		background: cyan;
-	}
-
-	70% {
-		background: cyan;
-	}
-
-	70.3% {
-		background: transparent;
-	}
-
-	100% {
-		background: transparent;
-	}
+/* Containerul principal al sondajului */
+.quiz-wrapper {
+    max-width: 350px;
+    margin: 1px auto;
+    padding: 12px;
+    border-radius: 8px;
+    background: url(./survey-bg.png);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-#light-3 {
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	margin: auto;
-	margin-bottom: 8px;
-	border: 1.7px solid black;
-	animation: blinking-light3 2.7s ease-in-out infinite;
+@media (min-width: 880px) {
+    .quiz-wrapper {
+        max-width: 400px;
+    }
+}
+
+.quiz-title {
+    color: gold;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Grila pentru butoane: 2 pe rând */
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.quiz-btn {
+    padding: 1px 1px;
+    border: 1px solid springgreen;
+    background: gold;
+    color: red;
+    text-shadow: 1px 1px 1.7px black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.quiz-btn:hover {
+    border-color: #3d0a0a;
+}
+
+.quiz-btn.active {
+    background: springgreen;
+    color: red;
+    border-color: springgreen;
+}
+
+/* Zona de răspuns cu înălțime fixă (Zero Layout Shift) */
+.result-area {
+    margin-top: 14px;
+    padding: 1px;
+    min-height: 45px;
+    /* Spațiu rezervat */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-text {
+    color: red;
+    background-color: gold;
+    font-weight: bold;
+    text-shadow: 1px 1px 1.7px black;
+    padding: 1px 10px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.result-text.show {
+    opacity: 1;
+}
+
+/* ============================================================
+   5. PRODUCTS SHOWCASE (REGLAJ DIMENSIUNI & NEW BADGE)
+   ============================================================ */
+.products-showcase {
+    padding: 57px 8px 17px 8px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 
-@keyframes blinking-light3 {
-	0% {
-		background: transparent;
-	}
-
-	70% {
-		background: transparent;
-	}
-
-	70.3% {
-		background: springgreen;
-	}
-
-	99.8% {
-		background: springgreen;
-	}
-
-	100% {
-		background: transparent;
-	}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
 }
 
+.product-card {
+    position: relative;
+    background: url(./leaf.png);
+    padding: 35px 1px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
 
-#buttonLinks {
-	background-color: cyan;
-	color: white;
-	text-shadow: .8px .8 px .8px black;
-	width: 197px;
-	height: 35px;
-	text-align: center;
-	font-size: 17px;
-	font-weight: 800;
-	text-align: center;
-	border-radius: 12px;
-	box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
-		inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
-		inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
-	cursor: pointer;
-	margin: 8px auto;
-	text-decoration: none;
+.product-card:hover {
+    box-shadow: 0 12px 25px rgba(0, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+/* NEW PRODUCT */
+.new-badge {
+    background: red;
+    color: white;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-weight: bold;
+    z-index: 5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* IMAGINEA PRODUSULUI  */
+.img-glow {
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: filter 0.3s ease;
+}
+
+.product-card:hover .img-glow {
+    animation: shakeOnly 0.5s infinite;
+    filter: brightness(1.25) drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+}
+
+@keyframes shakeOnly {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    20% {
+        transform: translate(-2px, 0px) rotate(1deg);
+    }
+
+    40% {
+        transform: translate(2px, 1px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-2px, -1px) rotate(0deg);
+    }
+
+    80% {
+        transform: translate(2px, -1px) rotate(1deg);
+    }
+
+    100% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+}
+
+.rating {
+    color: gold;
+}
+
+/* BUTOANELE BUY */
+.btn-buy {
+    background: transparent;
+    border: 2px solid red !important;
+    color: red !important;
+    padding: 10px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-buy:hover {
+    background: springgreen !important;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+/* ============================================================
+   6. RESPONSIVE
+   ============================================================ */
+@media (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img-glow {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .cta-container-flex,
+    .tech-reverse {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .image-block img {
+        max-width: 280px;
+    }
+
+    .img-glow {
+        max-width: 140px;
+    }
+
+    /* Revine la mărimea optimă pe mobil */
+    .new-badge {
+        top: 15px;
+        right: 15px;
+    }
+
+    /* Revine la colț pe mobil */
+    .stats-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+a {
+    font-size: .8rem;
+    background-color: cyan;
+    border-radius: 17px;
+    color: red;
+    font-weight: 800;
+    padding-left: 17px;
+    padding-right: 17px;
+    text-decoration: none;
 }
