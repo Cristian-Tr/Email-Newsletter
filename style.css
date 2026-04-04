@@ -54,6 +54,7 @@ small {
     background-position: center;
     position: relative;
     border-radius: 8px;
+   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     display: flex;
 }
@@ -116,7 +117,7 @@ small {
     background: url(./slide-0.png), url(./slide-1.png);
     background-repeat: no-repeat;
     background-color: transparent;
-    box-shadow: 0.8px 0.8px 17px rgba(0, 0, 0, .5);
+   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     animation: ChangeOnlyBackground 17s ease-in-out infinite;
     transition: .5s;
@@ -204,7 +205,7 @@ small {
     max-width: 350px;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* ============================================================
@@ -226,6 +227,7 @@ small {
     height: 270px;
     max-width: 1000px;
     margin: 0 auto;
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 880px) {
@@ -236,6 +238,11 @@ small {
 
 .stat-box {
     margin-top: 90px;
+     box-shadow: 0.8px 0.8px 17px rgba(0, 0, 0, .5);
+}
+
+.stats-grid img {
+ box-shadow: 0.8px 0.8px 17px rgba(0, 0, 0, .5);
 }
 
 .counter {
@@ -248,7 +255,6 @@ small {
     border: none;
     text-align: center;
 }
-
 
 /* ============================================================
    7. QUIZ 
@@ -265,6 +271,7 @@ small {
     font-family: 'Arial', sans-serif;
     text-align: center;
     box-sizing: border-box;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 .quiz-title {
@@ -354,12 +361,12 @@ small {
     background-position: center;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .product-card:hover {
-    box-shadow: 0 12px 25px rgba(0, 255, 255, 0.2);
+    box-shadow: 0 8px 17px rgba(0, 255, 255, 0.8);
     transform: translateY(-5px);
 }
 
@@ -500,25 +507,28 @@ small {
     opacity: 0.7;
 }
 
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
 
 .fa-facebook {
   background: #3B5998;
   color: white;
 }
 
-
 .fa-linkedin {
   background: #007bb5;
   color: white;
 }
 
-.fa-youtube {
-  background: #bb0000;
+.fa-instagram {
+  background: #125688;
   color: white;
 }
 
-.fa-instagram {
-  background: #125688;
+.fa-pinterest {
+  background: #cb2027;
   color: white;
 }
 
