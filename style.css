@@ -54,7 +54,7 @@ small {
     background-position: center;
     position: relative;
     border-radius: 8px;
-   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     display: flex;
 }
@@ -117,7 +117,7 @@ small {
     background: url(./slide-0.png), url(./slide-1.png);
     background-repeat: no-repeat;
     background-color: transparent;
-   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     animation: ChangeOnlyBackground 17s ease-in-out infinite;
     transition: .5s;
@@ -227,7 +227,7 @@ small {
     height: 270px;
     max-width: 1000px;
     margin: 0 auto;
-      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 880px) {
@@ -238,11 +238,18 @@ small {
 
 .stat-box {
     margin-top: 90px;
-     box-shadow: 0.8px 0.8px 17px rgba(0, 0, 0, .5);
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 12px 0 1px 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: .8px .8px 8px rgba(0, 0, 0, 0.5);
+
 }
 
 .stats-grid img {
- box-shadow: 0.8px 0.8px 17px rgba(0, 0, 0, .5);
+    box-shadow: 0.8px 0.8px 17px rgba(0, 0, 0, .5);
 }
 
 .counter {
@@ -494,12 +501,12 @@ small {
    6. FOOTER
    ============================================================ */
 .fa {
-   padding: 8px;
-  font-size: 21px;
-  width: 35px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+    padding: 8px;
+    font-size: 21px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
 }
 
 
@@ -508,27 +515,26 @@ small {
 }
 
 .fa-youtube {
-  background: #bb0000;
-  color: white;
+    background: #bb0000;
+    color: white;
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+    background: #3B5998;
+    color: white;
 }
 
 .fa-linkedin {
-  background: #007bb5;
-  color: white;
+    background: #007bb5;
+    color: white;
 }
 
 .fa-instagram {
-  background: #125688;
-  color: white;
+    background: #125688;
+    color: white;
 }
 
 .fa-pinterest {
-  background: #cb2027;
-  color: white;
+    background: #cb2027;
+    color: white;
 }
-
