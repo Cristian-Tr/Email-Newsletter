@@ -238,8 +238,8 @@ small {
 
 .stat-box {
     margin-top: 90px;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
     padding: 12px 0 1px 0;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
@@ -502,8 +502,8 @@ small {
    ============================================================ */
 .fa {
     padding: 8px;
-    font-size: 21px;
-    width: 35px;
+    font-size: 17px;
+    width: 32px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
