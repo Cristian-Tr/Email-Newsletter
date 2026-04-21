@@ -18,6 +18,24 @@ body {
     line-height: 1.7;
 }
 
+/* --- EFECT FADE IN LA INTRAREA PE SITE --- */
+@keyframes fadeInEfect {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+header,
+main {
+	animation: fadeInEfect 1s ease-out;
+}
+
 h1 {
     color: red;
     font-weight: 800;
