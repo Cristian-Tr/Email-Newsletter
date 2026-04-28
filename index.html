@@ -288,14 +288,20 @@
 
         <script>
             const counters = document.querySelectorAll('.counter');
-            const speed = 350;
+            const speed = 170;
 
-            // 1. Definim funcția de numărare (logica ta originală)
             const runCounter = (counter) => {
+                // Resetăm textul la 0 înainte de a începe
+                counter.innerText = '0';
+
                 const updateCount = () => {
                     const target = +counter.getAttribute('data-target');
                     const count = +counter.innerText;
                     const inc = target / speed;
+
+                    // Verificăm dacă elementul mai are clasa 'is-animating' 
+                    // (pentru a putea opri animația dacă iese din vizor)
+                    if (!counter.classList.contains('is-animating')) return;
 
                     if (count < target) {
                         counter.innerText = Math.ceil(count + inc);
@@ -304,22 +310,26 @@
                         counter.innerText = target;
                     }
                 };
+
+                counter.classList.add('is-animating');
                 updateCount();
             };
 
-            // 2. Urmarire scroll pentru initializare counter cand utilizatorul vede imaginea
-            const observer = new IntersectionObserver((entries, observer) => {
+            const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        // Dacă elementul e vizibil, pornim numărătoarea
+                        // Pornim animația
                         runCounter(entry.target);
-                        // Oprim observarea pentru acest element (să nu numere de fiecare dată când dăm scroll)
-                        observer.unobserve(entry.target);
+                    } else {
+                        // Când iese din vizor:
+                        // 1. Resetăm textul la 0
+                        entry.target.innerText = '0';
+                        // 2. Scoatem clasa pentru a opri orice setTimeout care încă rulează
+                        entry.target.classList.remove('is-animating');
                     }
                 });
-            }, { threshold: 0.5 }); // 0.5 înseamnă că începe când 50% din element e vizibil
+            }, { threshold: 0.5 });
 
-            // 3. Spunem observatorului ce elemente să urmărească
             counters.forEach(counter => {
                 observer.observe(counter);
             });
