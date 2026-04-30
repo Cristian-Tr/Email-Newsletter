@@ -77,20 +77,23 @@
         <!-- MY GITHUB PORTFOLIO LINK - START -->
         <div class="container">
             <h4 style="color: cyan;">DEMO LANDING PAGE</h4>
-            <a href="https://cristian-tr.github.io/Cristian-T-Portfolio/"
+            <a href="https://cristian-tr.github.io/Cristian-T-Portfolio/"  aria-label="Vizitează portofoliul meu GitHub"
                 style="font-size: 1rem; background-color: cyan; border-radius: 17px; color: white; font-weight: 800; padding-left: 17px; padding-right: 17px; text-decoration: none;">
                 CRISTIAN T <img src="my-photo.jpg" alt="My picture" style="width: clamp(35px, 8vw, 53px); height: clamp(35px, 8vw, 53px); 
                                    border-radius: 50%; margin-bottom: 7px; object-fit: cover; border: 1px solid cyan;">
                 PORTFOLIO</a>
             <!-- CALL TO ACTION SVG TEXT - START-->
-            <div style="width: 287px; margin: auto; margin-top: -5px; ">
-                <svg viewBox="0 0 450 60" style="width: 100%; overflow: visible; font-weight: 800; font-size: 1.7rem;">
+            <div style="width: 287px; margin: auto; margin-top: -5px;">
+                <svg viewBox="0 0 450 60" style="width: 100%; overflow: visible; font-weight: 700; font-size: 1.9rem;">
                     <symbol id="portfolio-text">
-                        <text text-anchor="middle" x="50%" y="50%" dy=".35em">
-                            Click to discover my projects!</text>
+                        <text text-anchor="middle" x="50%" y="50%" dy=".1em">
+                            DISCOVER MY PROJECTS!
+                        </text>
                     </symbol>
-                    <use xlink:href="#portfolio-text" fill="white" stroke="cyan"></use>
-                    <use xlink:href="#portfolio-text" fill="transparent" stroke-dasharray="none"></use>
+                    <!-- CULOARE FUNDAL TEXT -->
+                    <use xlink:href="#portfolio-text" fill="cyan"></use>
+                    <!-- CULOARE CONTUR TEXT ANIMAT -->
+                    <use xlink:href="#portfolio-text" class="text-animation"></use>
                 </svg>
             </div>
         </div>
@@ -251,13 +254,16 @@
                     <!-- CALL TO ACTION SVG TEXT - START-->
                     <div style="width: 287px; margin: auto;">
                         <svg viewBox="0 0 450 60"
-                            style="width: 100%; overflow: visible; font-weight: 800; font-size: 1.7rem;">
+                            style="width: 100%; overflow: visible; font-weight: 700; font-size: 1.9rem;">
                             <symbol id="profile-text">
-                                <text text-anchor="middle" x="50%" y="50%" dy=".35em">
-                                    Passionate about digital tech!</text>
+                                <text text-anchor="middle" x="50%" y="50%" dy=".1em">
+                                    Passionate about digital tech!
+                                </text>
                             </symbol>
-                            <use xlink:href="#profile-text" fill="white" stroke="cyan"></use>
-                            <use xlink:href="#profile-text" fill="transparent" stroke-dasharray="none"></use>
+                            <!-- CULOARE FUNDAL TEXT -->
+                            <use xlink:href="#profile-text" fill="cyan"></use>
+                            <!-- CULOARE CONTUR TEXT ANIMAT -->
+                            <use xlink:href="#profile-text" class="text-animation"></use>
                         </svg>
                     </div>
                     <!-- MY LINKEDIN ACCOUNT LINK & CTA SVG TEXT - END-->

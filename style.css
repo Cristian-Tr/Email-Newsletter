@@ -576,7 +576,7 @@ small {
   transition: transform 0.3s ease;
 }
 
-/* Elementul care generează lumina */
+/* CONTUR LUMINOS */
 .animated-linkedin-btn::before {
   content: '';
   position: absolute;
@@ -627,7 +627,6 @@ small {
 .animated-linkedin-btn:hover::before {
   animation-duration: 1.7s;
 }
-
 /* Stil foto */
 .my-image {
   width: 33px;
@@ -650,6 +649,43 @@ small {
   font-weight: 800;
   color: cyan;
   padding-top: 5px;
+}
+/* TEXT ANIMAT SVG */
+
+.text-animation {
+	fill: transparent;
+	stroke-width: 1;
+	stroke: black;
+	stroke-dasharray: 250 50;
+	animation: colorRotation 17s linear infinite;
+}
+
+@keyframes colorRotation {
+	0% {
+		stroke: black;
+		stroke-dashoffset: 1000;
+	}
+
+	25% {
+		stroke: black;
+	}
+
+	25.1% {
+		stroke: cyan;
+	}
+
+	75% {
+		stroke: cyan;
+	}
+
+	75.1% {
+		stroke: black;
+	}
+
+	100% {
+		stroke: black;
+		stroke-dashoffset: 0;
+	}
 }
 
 /* Blocare inversare culori de catre browser */
