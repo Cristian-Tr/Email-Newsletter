@@ -1,9 +1,22 @@
-Readme
-# Email-Newsletter
-https://cristian-tr.github.io/Email-Newsletter/ 
-
 🥛 Dairies Berries - Premium Newsletter Experience
-Concept: Un landing page de tip newsletter, construit pentru a demonstra controlul avansat asupra animațiilor CSS și coerența de brand într-un mediu minimalist.
+Proiect de Landing Page | Email Newsletter interactiv construit cu Bootstrap 5, cu accent pe toate criteriile de audit (SEO, Best practices,accesibilitate și performanță) pentru a demonstra controlul avansat asupra animațiilor CSS și coerența de brand într-un mediu minimalist.
+
+📈 Rezultate Audit Lighthouse
+🖥️ DESKTOP: Performance: 92 | Accesibility: 95 | Best practices: 100 | SEO: 100
+📱 MOBILE:  Performance: 50 | Accesibility: 95 | Best practices: 100 | SEO: 100
+
+🛠️ Tehnologii Utilizate
+HTML5 & CSS3 (Custom styling & Bootstrap 5) 🎨
+JavaScript (Interacțiuni și funcționalități UI) ⚡
+Dev Tools (Audit și optimizare) 📊
+
+🖥️>💻>📱 Responsive web design (RWD): Am proiectat un design adaptabil pe orice dispozitiv.
+
+🖼️ Imagini de Nouă Generație: Toate resursele grafice au fost convertite în format WebP pentru o încărcare instantanee, reducând dimensiunea fișierelor cu peste 80%.
+
+⚡ LCP & FCP Optimization: Am implementat fetchpriority="high" și preload pentru elementele critice (LCP), asigurând o experiență de utilizare fluidă.
+
+📏 Stabilitate Vizuală (CLS 0): Am eliminat orice salt vizual al elementelor prin definirea strictă a dimensiunilor imaginilor și optimizarea layout-ului.
 
 🚀 Highlights Tehnice
 Interactivitate SVG & Canvas Dynamic CTA Header: Am proiectat și implementat un motor de animație custom pentru o dronă SVG care transportă o sticla Dairies Berries peste o imagine idilică de fundal. Această integrare asigura o experiență vizuală fluidă și un Call-to-Action clar și captivant.

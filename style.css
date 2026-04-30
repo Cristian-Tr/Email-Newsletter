@@ -657,7 +657,7 @@ small {
 	stroke-width: 1;
 	stroke: black;
 	stroke-dasharray: 250 50;
-	animation: colorRotation 17s linear infinite;
+	animation: colorRotation 8s linear infinite;
 }
 
 @keyframes colorRotation {
@@ -666,11 +666,7 @@ small {
 		stroke-dashoffset: 1000;
 	}
 
-	25% {
-		stroke: black;
-	}
-
-	25.1% {
+	35% {
 		stroke: cyan;
 	}
 
