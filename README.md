@@ -1,14 +1,14 @@
-🥛 Dairies Berries - Premium Newsletter Experience
-Proiect de Landing Page | Email Newsletter interactiv construit cu Bootstrap 5, cu accent pe toate criteriile de audit (SEO, Best practices,accesibilitate și performanță) pentru a demonstra controlul avansat asupra animațiilor CSS și coerența de brand într-un mediu minimalist.
+🥛 Dairies Berries - Landing Page/Email Newsletter interactiv
 
 📈 Rezultate Audit Lighthouse
-🖥️ DESKTOP: Performance: 92 | Accesibility: 95 | Best practices: 100 | SEO: 100
-📱 MOBILE:  Performance: 50 | Accesibility: 95 | Best practices: 100 | SEO: 100
+🖥️ DESKTOP: Performance: 93 | Accesibility: 95 | Best practices: 100 | SEO: 100
+📱 MOBILE:  Performance: 54 | Accesibility: 95 | Best practices: 100 | SEO: 100
 
 🛠️ Tehnologii Utilizate
 HTML5 & CSS3 (Custom styling & Bootstrap 5) 🎨
 JavaScript (Interacțiuni și funcționalități UI) ⚡
-Dev Tools (Audit și optimizare) 📊
+GIMP (Prelucrare imagini in format .webp) 🖌️
+Developer Tools (Audit și optimizare) 📊
 
 🖥️>💻>📱 Responsive web design (RWD): Am proiectat un design adaptabil pe orice dispozitiv.
 
