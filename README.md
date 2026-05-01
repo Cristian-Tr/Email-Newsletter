@@ -1,7 +1,9 @@
 🥛 Dairies Berries - Landing Page/Email Newsletter interactiv
 
 📈 Rezultate Audit Lighthouse
+
 🖥️ DESKTOP: Performance: 93 | Accesibility: 95 | Best practices: 100 | SEO: 100
+
 📱 MOBILE:  Performance: 54 | Accesibility: 95 | Best practices: 100 | SEO: 100
 
 🛠️ Tehnologii Utilizate
