@@ -1,5 +1,7 @@
 🥛 Dairies Berries - Landing Page/Email Newsletter interactiv
 
+Link: https://cristian-tr.github.io/Email-Newsletter/ 
+
 📈 Rezultate Audit Lighthouse
 
 🖥️ DESKTOP: Performance: 93 | Accesibility: 95 | Best practices: 100 | SEO: 100
