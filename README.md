@@ -4,9 +4,9 @@ Link: https://cristian-tr.github.io/Email-Newsletter/
 
 📈 Rezultate Audit Lighthouse
 
-🖥️ DESKTOP: Performance: 93 | Accesibility: 95 | Best practices: 100 | SEO: 100
+🖥️ DESKTOP: Performance: 99 | Accesibility: 95 | Best practices: 100 | SEO: 100
 
-📱 MOBILE:  Performance: 54 | Accesibility: 95 | Best practices: 100 | SEO: 100
+📱 MOBILE:  Performance: 73 | Accesibility: 95 | Best practices: 100 | SEO: 100
 
 🛠️ Tehnologii Utilizate
 HTML5 & CSS3 (Custom styling & Bootstrap 5) 🎨
@@ -15,6 +15,8 @@ GIMP (Prelucrare imagini in format .webp) 🖌️
 Developer Tools (Audit și optimizare) 📊
 
 🖥️>💻>📱 Responsive web design (RWD): Am proiectat un design adaptabil pe orice dispozitiv.
+
+Testat pe modurile white/dark pe mai multe browser-e bazate pe Chromium engine.
 
 🖼️ Imagini de Nouă Generație: Toate resursele grafice au fost convertite în format WebP pentru o încărcare instantanee, reducând dimensiunea fișierelor cu peste 80%.
 
