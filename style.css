@@ -650,7 +650,7 @@ small {
 .btn-title {
   font-size: 1.25rem;
   font-weight: 800;
-  text-shadow: 1px 1px 0px #000;
+  text-shadow: 1px 1px 1px black;
   color: cyan;
   padding-top: 5px;
 }
