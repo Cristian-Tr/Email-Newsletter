@@ -146,7 +146,7 @@ small {
 /* ============================================================
    2. SVG DRONA
    ============================================================ */
-   /* CONTAINER DRONA */
+/* CONTAINER DRONA */
 #drone-section {
     width: 100%;
     display: flex;
@@ -447,25 +447,35 @@ small {
 /* ============================================================
    7. QUIZ 
    ============================================================ */
+#quiz {
+    width: 323px;
+    height: 323px;
+    margin: auto;
+}
 
-
-.quiz-wrapper {
-    max-width: 340px;
-    margin: 1px auto;
-    padding: 12px;
-    border: 2px solid springgreen;
-    border-radius: 8px;
-    background: url(./survey-bg.webp);
-    text-align: center;
-    box-sizing: border-box;
+#quiz-background {
+    width: 323px;
+    max-width: 323px;
+    height: auto;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
+.quiz-wrapper {
+    width: 323px;
+    max-width: 323px;
+    margin: 1px auto;
+    margin-top: -262px;
+    border-radius: 8px;
+    background: transparent;
+    text-align: center;
+    box-sizing: border-box;
+}
+
 .quiz-title {
-    color: gold;
+    color: red;
     margin-top: 0;
     margin-bottom: 8px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 
@@ -474,16 +484,19 @@ small {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
+    padding: 7px;
+    margin: auto;
 }
 
 .quiz-btn {
-    padding: 1px 1px;
     background: red;
     color: springgreen;
-   text-shadow: 1px 1px 0px #000;
+    text-shadow: 1px 1px 0px black;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.07rem;
+    border-radius: 0;
+    padding-bottom: 7px;
     transition: all 0.25s ease-in-out;
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
         inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
@@ -491,17 +504,15 @@ small {
 }
 
 .quiz-btn.active {
-    background: springgreen;
+    background: transparent;
     color: red;
-    border-color: springgreen;
 }
 
 /* Zona de răspuns cu înălțime fixă (Zero Layout Shift) */
 .result-area {
-    margin-top: 14px;
+    margin-top: 3px;
     padding: 1px;
     min-height: 45px;
-    /* Spațiu rezervat */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -509,11 +520,11 @@ small {
 
 .result-text {
     color: red;
-    background-color: gold;
+    background-color: transparent;
     font-weight: bold;
     text-shadow: 1px 1px 1.7px black;
-    padding: 1px 10px;
-    font-size: 1.2rem;
+    padding-left: 1px;
+    font-size: 1.7rem;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -684,137 +695,139 @@ small {
 
 /* ── SOCIAL MEDIA BUTTON ── */
 .linkedin-container {
-  display: flex;
-  justify-content: center;
-  margin: 1px auto;
+    display: flex;
+    justify-content: center;
+    margin: 1px auto;
 }
 
 .animated-linkedin-btn {
-  position: relative;
-  width: 287px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  text-shadow: 1px 1px 0px #000;
-  text-decoration: none !important;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
+    position: relative;
+    width: 287px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    text-shadow: 1px 1px 0px #000;
+    text-decoration: none !important;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 /* CONTUR LUMINOS */
 .animated-linkedin-btn::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 450%;
-  background: conic-gradient(transparent,
-      cyan,
-      transparent,
-      magenta,
-      transparent,
-      cyan);
-  animation: rotateLight 3s linear infinite;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 450%;
+    background: conic-gradient(transparent,
+            cyan,
+            transparent,
+            magenta,
+            transparent,
+            cyan);
+    animation: rotateLight 3s linear infinite;
 }
 
 .animated-linkedin-btn::after {
-  content: '';
-  position: absolute;
-  inset: 1px;
-  background: white;
-  border-radius: 8px;
-  text-shadow: 1px 1px 0px #000;
+    content: '';
+    position: absolute;
+    inset: 1px;
+    background: white;
+    border-radius: 8px;
+    text-shadow: 1px 1px 0px #000;
 }
 
 .btn-content {
-  position: relative;
-  z-index: 8;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 8px;
-  gap: 8px;
+    position: relative;
+    z-index: 8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 8px;
+    gap: 8px;
 }
 
 @keyframes rotateLight {
-  from {
-    transform: rotate(0deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
 
-  to {
-    transform: rotate(360deg);
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .animated-linkedin-btn:hover {
-  transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .animated-linkedin-btn:hover::before {
-  animation-duration: 1.7s;
+    animation-duration: 1.7s;
 }
+
 /* Stil foto */
 .my-image {
-  width: 33px;
-  height: 33px;
-  border-radius: 50%;
-  border: 1px solid cyan;
-  object-fit: cover;
-  flex-shrink: 0;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 1px solid cyan;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .text-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1.25;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.25;
 }
 
 .btn-title {
-  font-size: 1.25rem;
-  font-weight: 800;
-  text-shadow: 1px 1px 1px black;
-  color: cyan;
-  padding-top: 5px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px black;
+    color: cyan;
+    padding-top: 5px;
 }
+
 /* TEXT ANIMAT SVG */
 
 .text-animation {
-	fill: transparent;
-	stroke-width: 1;
-	stroke: black;
-	stroke-dasharray: 250 50;
-	animation: colorRotation 8s linear infinite;
+    fill: transparent;
+    stroke-width: 1;
+    stroke: black;
+    stroke-dasharray: 250 50;
+    animation: colorRotation 8s linear infinite;
 }
 
 @keyframes colorRotation {
-	0% {
-		stroke: black;
-		stroke-dashoffset: 1000;
-	}
+    0% {
+        stroke: black;
+        stroke-dashoffset: 1000;
+    }
 
-	35% {
-		stroke: cyan;
-	}
+    35% {
+        stroke: cyan;
+    }
 
-	75% {
-		stroke: cyan;
-	}
+    75% {
+        stroke: cyan;
+    }
 
-	75.1% {
-		stroke: black;
-	}
+    75.1% {
+        stroke: black;
+    }
 
-	100% {
-		stroke: black;
-		stroke-dashoffset: 0;
-	}
+    100% {
+        stroke: black;
+        stroke-dashoffset: 0;
+    }
 }
 
 /* Blocare inversare culori de catre browser */
 :root {
-  color-scheme: light only;
+    color-scheme: light only;
 }

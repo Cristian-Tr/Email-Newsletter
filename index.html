@@ -172,12 +172,13 @@
             </div>
         </div>
 
-        <section class="col-12" style="margin-top: 57px;">
+        <section class="col-12 text-center" id="quiz" style="margin-top: 57px;">
 
-            <h2 style="font-weight: 800;">FIND THE RIGHT PRODUCT</h2>
-
+            <h2 style="font-weight: 800;">QUIZ</h2>
+ <img src="./quiz-background.webp" id="quiz-background" width="1024" height="1024" alt="Quiz background"
+                        loading="lazy">
             <div class="quiz-wrapper">
-                <h3 class="quiz-title">Which product would suit you?</h3>
+                <h3 class="quiz-title">FIND THE RIGHT<br>PRODUCT FOR YOU!</h3>
                 <div class="options-grid" id="quizOptions">
                     <button class="quiz-btn" onclick="selectJuice(this, 'Raspberry')">Velvety Aroma</button>
                     <button class="quiz-btn" onclick="selectJuice(this, 'Strawberry')">Intense Perfume</button>
@@ -357,7 +358,7 @@
                 // Efect de tranziție pentru text
                 resultSpan.classList.remove('show');
                 setTimeout(() => {
-                    resultSpan.innerText = "Dairies Berries - " + flavor;
+                    resultSpan.innerText = "Dairies Berries \n" + flavor;
                     resultSpan.classList.add('show');
 
                 }, 170);
