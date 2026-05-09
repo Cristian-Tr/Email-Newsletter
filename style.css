@@ -318,9 +318,7 @@ small {
     background-size: 25%;
     z-index: 2;
     pointer-events: none;
-    /* Schimbăm animația aici */
     animation: bottle-sway 5s ease-in-out infinite alternate;
-    /* Adăugăm un punct de pivot la baza sticlei pentru realism */
     transform-origin: bottom center;
 }
 
@@ -358,7 +356,7 @@ small {
    3. SECTIUNI CONTENT (STORY & DELIVERY)
    ============================================================ */
 .section-history {
-    padding: 53px 8px;
+    padding: 50px 8px;
     background-color: transparent;
     text-align: left;
 }
@@ -396,7 +394,7 @@ small {
    ============================================================ */
 .section-stats {
     background-color: transparent;
-    padding: 25px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -447,34 +445,27 @@ small {
 /* ============================================================
    7. QUIZ 
    ============================================================ */
-#quiz {
-    width: 323px;
-    height: 323px;
-    margin: auto;
-}
 
-#quiz-background {
-    width: 323px;
-    max-width: 323px;
-    height: auto;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
-}
 
 .quiz-wrapper {
     width: 323px;
     max-width: 323px;
-    margin: 1px auto;
-    margin-top: -262px;
+    height: 241px;
+    margin: auto;
     border-radius: 8px;
-    background: transparent;
+    background: url(quiz-background.webp);
     text-align: center;
     box-sizing: border-box;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .quiz-title {
     color: red;
-    margin-top: 0;
-    margin-bottom: 8px;
+    text-shadow: 1px 1px 1px black;
+    padding-top: 3px;
+    margin: 1px auto;
     font-size: 1.2rem;
     text-transform: uppercase;
 }
@@ -484,7 +475,6 @@ small {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
-    padding: 7px;
     margin: auto;
 }
 
@@ -494,8 +484,8 @@ small {
     text-shadow: 1px 1px 0px black;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1.07rem;
-    border-radius: 0;
+    font-size: 1rem;
+    border-radius: 8px;
     padding-bottom: 7px;
     transition: all 0.25s ease-in-out;
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
@@ -504,18 +494,20 @@ small {
 }
 
 .quiz-btn.active {
-    background: transparent;
+    background: springgreen;
     color: red;
 }
 
 /* Zona de răspuns cu înălțime fixă (Zero Layout Shift) */
 .result-area {
-    margin-top: 3px;
+    margin-top: auto;
     padding: 1px;
     min-height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
 }
 
 .result-text {
