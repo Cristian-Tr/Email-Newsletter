@@ -4,9 +4,9 @@ Link: https://cristian-tr.github.io/Email-Newsletter/
 
 📈 Rezultate Audit Lighthouse
 
-🖥️ DESKTOP: Performance: 99 | Accesibility: 95 | Best practices: 100 | SEO: 100
+🖥️ DESKTOP: Performance: 98 | Accesibility: 95 | Best practices: 100 | SEO: 100
 
-📱 MOBILE:  Performance: 81 | Accesibility: 95 | Best practices: 100 | SEO: 100
+📱 MOBILE:  Performance: 59 | Accesibility: 95 | Best practices: 100 | SEO: 100
 
 🛠️ Tehnologii Utilizate
 HTML5 & CSS3 (Custom styling & Bootstrap 5) 🎨

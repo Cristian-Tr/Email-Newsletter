@@ -638,6 +638,22 @@ small {
     box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
 }
 
+
+/* ============================================================
+   6. CARUSEL TESTIMONIALE
+   ============================================================ */
+.carousel-item div.px-lg-5 {
+    min-height: 180px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aliniem textul de sus pentru a păstra stelele la același nivel */
+    align-items: center;
+    padding-top: 10px;
+}
+
+.carousel-item p .text-warning mb-2 {
+    text-shadow: 1px 1px 1px;
+}
 /* ============================================================
    6. RESPONSIVE
    ============================================================ */
