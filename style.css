@@ -404,14 +404,14 @@ small {
     background-size: cover;
     background-position: center;
     border-radius: 8px;
-    width: 90%;
+    width: 93%;
     height: 314px;
     max-width: 1000px;
     margin: 0 auto;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width: 880px) {
+@media (min-width: 881px) {
     .stats-grid {
         height: 350px;
     }
@@ -448,18 +448,23 @@ small {
 
 
 .quiz-wrapper {
-    width: 323px;
-    max-width: 323px;
-    height: 241px;
+    width: 93%;
+    height: auto;
     margin: auto;
     border-radius: 8px;
     background: url(quiz-background.webp);
-    text-align: center;
-    box-sizing: border-box;
-    object-fit: cover;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0.8px 0.8px 17px rgba(0, 0, 0, .5);
 }
+
+@media (min-width: 881px) {
+    .quiz-wrapper {
+        width: 35%;
+    }
+}
+
 
 .quiz-title {
     color: red;
@@ -643,10 +648,11 @@ small {
    6. CARUSEL TESTIMONIALE
    ============================================================ */
 .carousel-item div.px-lg-5 {
-    min-height: 180px; 
+    min-height: 180px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Aliniem textul de sus pentru a păstra stelele la același nivel */
+    justify-content: flex-start;
+    /* Aliniem textul de sus pentru a păstra stelele la același nivel */
     align-items: center;
     padding-top: 10px;
 }
@@ -654,6 +660,7 @@ small {
 .carousel-item active {
     margin-top: 8px;
 }
+
 .carousel-item p .text-warning mb-2 {
     text-shadow: 1px 1px 1px;
 }
