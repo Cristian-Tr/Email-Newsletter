@@ -651,9 +651,13 @@ small {
     padding-top: 10px;
 }
 
+.carousel-item active {
+    margin-top: 8px;
+}
 .carousel-item p .text-warning mb-2 {
     text-shadow: 1px 1px 1px;
 }
+
 /* ============================================================
    6. RESPONSIVE
    ============================================================ */
