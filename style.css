@@ -446,18 +446,18 @@ small {
    7. QUIZ 
    ============================================================ */
 
-
 .quiz-wrapper {
-    width: 93%;               
-    max-width: 410px;        
-    aspect-ratio: 1 / 1;          
-    margin: 1px auto;  
+    width: 90%;
+    max-width: 440px;
+    aspect-ratio: 1 / 1;
+    margin: 8px auto;
     background: url('child-quiz.webp') center / cover no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
-    padding: 12px;       
+    justify-content: space-between;
+    padding: 12px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .quiz-title {
@@ -466,8 +466,8 @@ small {
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
-    margin: 53% auto 0 auto; 
-    font-size: clamp(0.95rem, 4vw, 1.25rem); 
+    margin: 53% auto 0 auto;
+    font-size: clamp(1rem, 3.5vw, 1.2rem);
     width: 100%;
 }
 
@@ -475,9 +475,9 @@ small {
 .options-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8px; 
+    gap: 6px;
     width: 100%;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 .quiz-btn {
@@ -486,25 +486,20 @@ small {
     text-shadow: 1px 1px 1px black;
     cursor: pointer;
     font-weight: bold;
-    font-size: clamp(0.8rem, 3vw, 0.95rem); 
-    border: none; 
+    font-size: clamp(0.75rem, 3vw, 0.95rem);
+    border: none;
     border-radius: 8px;
-    padding: 10px 5px; 
+    padding: 8px 4px;
     transition: all 0.25s ease-in-out;
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
-                inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
-                inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+        inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+        inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
 }
 
-.quiz-btn.active {
-    background: springgreen;
-    color: red;
-}
-
-/* Zona de răspuns */
+/* ZONA DE RĂSPUNS (Zero Jumping Effect) */
 .result-area {
     margin-top: 5px;
-    min-height: 40px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -516,9 +511,11 @@ small {
     background-color: transparent;
     font-weight: bold;
     text-shadow: 1px 1px 1.7px black;
-    font-size: clamp(1.2rem, 3.5vw, 1.7rem);
+    font-size: clamp(1.2rem, 3.5vw, 1.4rem);
+    line-height: 1.1;
     opacity: 0;
     transition: opacity 0.3s ease;
+    white-space: nowrap;
 }
 
 .result-text.show {
