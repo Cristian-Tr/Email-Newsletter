@@ -529,7 +529,7 @@ small {
 
 /* ZONA DE RĂSPUNS (Zero Jumping Effect) */
 .result-area {
-    margin-bottom: 8px;
+    margin-bottom: 1px;
     height: 44px;
     display: flex;
     align-items: center;
