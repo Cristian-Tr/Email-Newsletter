@@ -188,7 +188,7 @@ small {
     padding-right: 17px;
     text-decoration: none;
     text-shadow: .8px .8px .8px black;
-    padding-bottom: 1px;
+    padding-bottom: .1px;
 }
 
 /* ============================================================
@@ -834,9 +834,9 @@ small {
 .btn-title {
     font-size: 1.25rem;
     font-weight: 800;
-    text-shadow: 1px 1px 1px black;
-    color: cyan;
-    padding-top: 5px;
+    text-shadow: .1px .1px .1px black;
+    color: royalblue;
+    padding-top: 3px;
 }
 
 /* TEXT ANIMAT SVG */
