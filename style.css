@@ -537,6 +537,12 @@ small {
     overflow: hidden;
 }
 
+@media (min-width: 881px) {
+    .result-area {
+        margin-bottom: 12px;
+    }
+}
+
 .result-text {
     color: #f30005;
     background-color: transparent;
