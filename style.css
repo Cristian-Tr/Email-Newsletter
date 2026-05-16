@@ -449,7 +449,7 @@ small {
 
 .quiz-wrapper {
     width: 93%;               
-    max-width: 440px;        
+    max-width: 410px;        
     aspect-ratio: 1 / 1;          
     margin: 1px auto;  
     background: url('child-quiz.webp') center / cover no-repeat;
