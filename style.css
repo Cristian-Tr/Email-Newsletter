@@ -448,54 +448,52 @@ small {
 
 
 .quiz-wrapper {
-    width: 89%;
-    height: auto;
-    margin: auto;
-    border-radius: 8px;
-    background: url(quiz-background.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0.8px 0.8px 17px rgba(0, 0, 0, .5);
+    width: 93%;               
+    max-width: 440px;        
+    aspect-ratio: 1 / 1;          
+    margin: 1px auto;  
+    background: url('child-quiz.webp') center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 12px;       
+    box-sizing: border-box;
 }
-
-@media (min-width: 881px) {
-    .quiz-wrapper {
-        width: 35%;
-    }
-}
-
 
 .quiz-title {
     color: red;
     text-shadow: 1px 1px 1px black;
-    padding-top: 3px;
-    margin: 1px auto;
-    font-size: 1.2rem;
+    font-weight: 800;
     text-transform: uppercase;
+    text-align: center;
+    margin: 53% auto 0 auto; 
+    font-size: clamp(0.95rem, 4vw, 1.25rem); 
+    width: 100%;
 }
 
-/* Grila pentru butoane: 2 pe rând */
+/* Grila pentru butoane */
 .options-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin: auto;
+    gap: 8px; 
+    width: 100%;
+    margin-top: auto; 
 }
 
 .quiz-btn {
     background: red;
     color: springgreen;
-    text-shadow: 1px 1px 0px black;
+    text-shadow: 1px 1px 1px black;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 3vw, 0.95rem); 
+    border: none; 
     border-radius: 8px;
-    padding-bottom: 7px;
+    padding: 10px 5px; 
     transition: all 0.25s ease-in-out;
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
-        inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
-        inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+                inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+                inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
 }
 
 .quiz-btn.active {
@@ -503,15 +501,13 @@ small {
     color: red;
 }
 
-/* Zona de răspuns cu înălțime fixă (Zero Layout Shift) */
+/* Zona de răspuns */
 .result-area {
-    margin-top: auto;
-    padding: 1px;
-    min-height: 45px;
+    margin-top: 5px;
+    min-height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     overflow: hidden;
 }
 
@@ -520,8 +516,7 @@ small {
     background-color: transparent;
     font-weight: bold;
     text-shadow: 1px 1px 1.7px black;
-    padding-left: 1px;
-    font-size: 1.7rem;
+    font-size: clamp(1.2rem, 3.5vw, 1.7rem);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -529,6 +524,9 @@ small {
 .result-text.show {
     opacity: 1;
 }
+
+
+
 
 
 /* ============================================================
@@ -648,7 +646,7 @@ small {
    6. CARUSEL TESTIMONIALE
    ============================================================ */
 .carousel-item div.px-lg-5 {
-    min-height: 180px;
+    min-height: 210px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
