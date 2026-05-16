@@ -466,7 +466,8 @@ small {
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
-    margin: 53% auto 0 auto;
+    margin: 50% auto 0 auto;
+    padding-bottom: 8px;
     font-size: clamp(1rem, 3.5vw, 1.2rem);
     width: 100%;
 }
@@ -507,13 +508,14 @@ small {
 
 /* ZONA DE RĂSPUNS (Zero Jumping Effect) */
 .result-area {
-    margin-top: 5px;
-    height: 42px;
+    margin-bottom: 17px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
+
 .result-text {
     color: red;
     background-color: transparent;
