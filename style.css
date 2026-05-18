@@ -74,6 +74,7 @@ p {
     color: #212529bf;
     font-weight: 400;
     text-shadow: black .1px .1px .1px;
+    text-align: justify;
 }
 
 small {
