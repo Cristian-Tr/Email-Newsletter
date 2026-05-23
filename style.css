@@ -486,8 +486,8 @@ small {
     font-weight: 800;
     text-align: center;
     margin: 50% auto 0 auto;
-    padding-top: 17px;
-    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-bottom: 17px;
     font-size: clamp(1rem, 3.5vw, 1.2rem);
     width: 100%;
 }
@@ -529,7 +529,8 @@ small {
 
 /* ZONA DE RĂSPUNS (Zero Jumping Effect) */
 .result-area {
-    margin-bottom: 17px;
+    margin-top: 17px;
+    margin-bottom: 35px;
     height: 44px;
     display: flex;
     align-items: center;
